@@ -1,0 +1,150 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+.navbar {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 7vh;
+    background-color: white;
+}
+.ikon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: auto;
+    height: 30px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    font-size: larger;
+}
+.ikon-1 {
+    margin-right: 10%;
+    border-radius: 10vh;
+    border: 0px;
+    font-weight: bolder;
+}
+.ikon-2 {
+    border-left: 1px solid black;
+    border-radius: 10vh 0px 0px 10vh;
+}
+.ikon-7 {
+    border-right: 1px solid black;
+    border-radius: 0vh 10vh 10vh 0vh;
+}
+.ikon-8 {
+    margin-left: 10%;
+    border: 1px solid black;
+    border-radius: 10vh;
+}
+.isi {
+    display: flex;
+    margin-top: 40px;
+    padding: 20px;
+    width: 100%;
+    height: 50%;
+    font-size: larger;
+}
+.isi-kiri {
+    padding: 20px;
+    width: 50%;
+    height: 50%;
+
+}
+.isi-kanan {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    height: 50vh;
+}
+.isi-kanan-atas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+}
+.isi-kanan-2 {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+}
+.isi-kanan-bagiankiri {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    height: 100%;
+}
+.box-1 {
+    width: 100%;
+    height: 50%;
+    border-radius: 3vh;
+    background-color: lightskyblue;
+}
+.box-2 {
+    width: 100%;
+    height: 50%;
+    border-radius: 3vh;
+   background-color: lightskyblue;
+}
+.isi-kanan-bagiankanan {
+    width: 50%;
+    height:100%;
+    border-radius: 3vh;
+    background-color: lightskyblue;
+}
+.isi-kanan-bagianbawah {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    border-radius: 3vh;
+    background-color: lightskyblue;
+}
+.isi-bawah {
+    margin: 50px 3% 3% 3%;
+    width: auto;
+    height: 30vh;
+}
+.isi-bawah-kotak {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+    width: 100%;
+    height: 50%;
+    background-color: lightskyblue;
+    border-radius: 3vh 3vh 0 0;
+    font-size: larger;
+}
+.isi-bawah-bagian1 {
+    width: 5%;
+    height: auto;
+}
+.isi-bawah-bagian2 {
+    width: 5%;
+    height: auto;
+}
+.isi-bawah-bagian3 {
+    width: 5%;
+    height: auto;
+}
+.isi-bawah-bagian4 {
+    width: 5%;
+    height: auto;
+}
+

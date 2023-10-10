@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(195,34,34);
+    background: linear-gradient(270deg, rgba(195,34,34,1) 0%, rgba(121,45,253,1) 100%);
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 5px;
+    background-color: white;
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    position: relative;
+}
+.container .title::before{
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 30px;
+    position: absolute;
+    background: rgb(195,34,34);
+    background: linear-gradient(90deg, rgba(195,34,34,1) 0%, rgba(121,45,253,1) 100%);
+}
+.container form .user-details{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+.user-details .input-box .details{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    border-bottom-width: 3px;
+    padding-left: 15px;
+    font-size: 16px;
+}
+form .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+form .gender-details .category{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 14px 0;
+}
+.gender-details .category label{
+    display: flex;
+    align-items: center;
+}
+.gender-details .category .dot{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: lightgrey;
+    border: 5px solid transparent;
+}
+#dot-1:checked ~ .category .one,
+#dot-2:checked ~ .category .two,
+#dot-3:checked ~ .category .three{ 
+    border-color: lightgrey;
+    background-color: grey;
+ }
+form input[type="radio"]{
+    display: none;
+}
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    color: white;
+    background: linear-gradient(90deg, rgba(195,34,34,1) 0%, rgba(121,45,253,1) 100%);
+}
