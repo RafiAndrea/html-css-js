@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Onest:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+html body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+section#root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+  padding: 20px 50px;
+}
+section#root nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+  gap: 10px;
+  font-family: "Poppins", sans-serif;
+}
+section#root nav .left-side {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  flex-grow: 1;
+  font-size: 0.9rem;
+}
+@media screen and (min-width: 1024px) {
+  section#root nav .left-side {
+    width: 100%;
+  }
+}
+section#root nav .left-side .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  padding: 2px;
+  border: 1px solid white;
+  border-radius: 3vh;
+  flex-grow: 1;
+}
+section#root nav .left-side .wrapper .left-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 3vh;
+  color: white;
+}
+section#root nav .left-side .wrapper .left-nav:hover {
+  background-color: white;
+  color: black;
+}
+section#root nav .left-side .wrapper .left-nav i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: black;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid black;
+}
+section#root nav .left-side .right-nav {
+  display: none;
+  align-items: center;
+  width: 70%;
+  padding: 2px;
+  gap: 2px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 3vh;
+  flex-grow: 2;
+}
+@media screen and (min-width: 1024px) {
+  section#root nav .left-side .right-nav {
+    display: flex;
+    width: 75%;
+  }
+}
+section#root nav .left-side .right-nav .portfolio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  gap: 5px;
+  border: 1px solid white;
+  border-radius: 3vh;
+  flex-grow: 1;
+}
+section#root nav .left-side .right-nav .portfolio:hover {
+  background-color: white;
+  color: black;
+}
+section#root nav .left-side .right-nav .portfolio p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px;
+  background-color: gold;
+  border-radius: 3vh;
+  color: black;
+}
+section#root nav .left-side .right-nav .category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  gap: 5px;
+  border: 1px solid white;
+  border-radius: 3vh;
+  flex-grow: 1;
+}
+section#root nav .left-side .right-nav .category:hover {
+  background-color: white;
+  color: black;
+}
+section#root nav .left-side .right-nav .category p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px;
+  background-color: deeppink;
+  border-radius: 3vh;
+}
+section#root nav .right-side {
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  section#root nav .right-side {
+    display: flex;
+    width: 40%;
+  }
+}
+section#root nav .right-side ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2px;
+}
+section#root nav .right-side ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  aspect-ratio: 1/1;
+  border: 1px solid white;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  color: white;
+}
+section#root nav .right-side ul li:hover {
+  background-color: white;
+  color: black;
+}
+section#root nav .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: 1px solid;
+  padding: 2px;
+  border-radius: 3vh;
+}
+@media screen and (min-width: 1024px) {
+  section#root nav .menu {
+    display: none;
+    width: 75%;
+  }
+}
+section#root nav .menu h3 {
+  color: white;
+  border: 1px solid;
+  padding: 8px 20px;
+  border-radius: 3vh;
+}
+section#root header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+section#root header .wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: rgb(132, 146, 148);
+  justify-content: space-between;
+  border-radius: 3vh;
+  width: 100%;
+  padding: 60px 50px 50px 50px;
+}
+@media screen and (min-width: 640px) {
+  section#root header .wrapper {
+    flex-direction: row;
+  }
+}
+section#root header .wrapper .left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 80%;
+  color: white;
+  gap: 15px;
+}
+section#root header .wrapper .left-side h1 {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+@media screen and (min-width: 1024px) {
+  section#root header .wrapper .left-side h1 {
+    font-size: 5rem;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  section#root header .wrapper .left-side h1 {
+    font-size: 3rem;
+  }
+}
+section#root header .wrapper .left-side h1::after {
+  content: "";
+  width: 80px;
+  height: 5px;
+  background-color: white;
+}
+section#root header .wrapper .left-side h1 i {
+  font-size: 2.2rem;
+}
+section#root header .wrapper .left-side ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+@media screen and (min-width: 640px) {
+  section#root header .wrapper .left-side ul {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+  }
+}
+section#root header .wrapper .left-side ul li {
+  list-style: none;
+}
+section#root header .wrapper .left-side ul li button {
+  color: white;
+  background-color: rgb(132, 146, 148);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  border: 1.2px solid white;
+  padding: 8px;
+  border-radius: 2vh;
+}
+@media screen and (min-width: 640px) {
+  section#root header .wrapper .left-side ul li button {
+    font-size: 1.2rem;
+    gap: 70px;
+  }
+}
+section#root header .wrapper .left-side ul li p {
+  font-size: 0.9rem;
+}
+@media screen and (min-width: 1024px) {
+  section#root header .wrapper .left-side ul li p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  section#root header .wrapper .left-side ul li p {
+    font-size: 1.1rem;
+  }
+}
+section#root header .wrapper .right-side {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+section#root header .wrapper .right-side ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+  gap: 15px;
+}
+section#root header .wrapper .right-side ul li {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+section#root header .wrapper .right-side ul li img {
+  border-radius: 50%;
+  width: 140px;
+}
+section#root header .wrapper .right-side ul li p {
+  border-radius: 3vh;
+  color: white;
+  padding: 2px 14px;
+  background-color: rgb(163, 174, 176);
+}
+section#root header .text-description {
+  display: flex;
+  width: 100%;
+  padding: 10px 0px;
+  color: white;
+  font-size: 0.9rem;
+  flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  section#root header .text-description {
+    flex-direction: row;
+  }
+}
+section#root header .text-description .left {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+}
+@media screen and (min-width: 1024px) {
+  section#root header .text-description .left {
+    width: 50%;
+  }
+}
+section#root header .text-description .left .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 3vh;
+  border: 1px solid gray;
+}
+section#root header .text-description .right {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  section#root header .text-description .right {
+    width: 50%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,565 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100vh;
+}
+
+section {
+  display: flex;
+  width: 100%;
+  padding: 30px;
+}
+section aside {
+  width: 25%;
+  height: 100vh;
+  justify-content: space-between;
+}
+section aside .title {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section aside .title h1 {
+  font-size: 2.2rem;
+}
+section aside .title h1:nth-child(1) {
+  color: red;
+}
+section aside .title button {
+  padding: 13px;
+  border: none;
+  color: white;
+  background: rgb(255, 0, 0);
+  background: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(111, 0, 0) 100%);
+}
+section aside .title button span {
+  margin-left: 10px;
+  margin-right: 55px;
+}
+section aside .list table {
+  width: 200px;
+  padding: 20px 0 0 0;
+}
+section aside .list table tr {
+  height: 40px;
+}
+section aside .list table tr a {
+  color: black;
+  text-decoration: none;
+}
+section aside .action {
+  padding: 150px 0 0 0;
+}
+section aside .action table {
+  width: 200px;
+  height: 60px;
+}
+section aside .action table tr {
+  height: 40px;
+}
+section aside .action table tr a {
+  color: black;
+  text-decoration: none;
+}
+section main {
+  width: 75%;
+}
+section main nav {
+  margin-bottom: 30px;
+  display: flex;
+}
+section main nav .input {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+section main nav .input form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  padding: 10px;
+  gap: 10px;
+  background-color: rgb(239, 239, 239);
+}
+section main nav .input form select {
+  width: 150px;
+  height: 40px;
+  outline: none;
+  border: none;
+}
+section main nav .input form .search input {
+  width: 350px;
+  height: 40px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+section main nav .input form .button-search button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+section main nav .input form .button-search button i {
+  font-size: 20px;
+}
+section main nav .input .icon-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  padding: 20px;
+}
+section main nav .input .icon-list ul {
+  display: flex;
+  list-style-type: none;
+  font-size: 25px;
+  gap: 20px;
+}
+section main nav .input .icon-list ul li img {
+  width: 30px;
+  border-radius: 50%;
+}
+section main header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 10px;
+}
+section main header .left-content {
+  width: 80%;
+  display: flex;
+  background-color: rgb(239, 239, 239);
+}
+section main header .left-content .img-content img {
+  width: 300px;
+}
+section main header .left-content .img-text {
+  padding-top: 40px;
+  padding-left: 40px;
+}
+section main header .left-content .img-text h1 {
+  font-size: 2rem;
+}
+section main header .left-content .img-text p {
+  font-size: 0.8rem;
+}
+section main header .left-content .merk {
+  display: flex;
+  width: 100%;
+  padding-top: 100px;
+}
+section main header .left-content .merk .left {
+  width: 50%;
+}
+section main header .left-content .merk .left ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+section main header .left-content .merk .left ul li img {
+  width: 30px;
+}
+section main header .left-content .merk .right {
+  width: 50%;
+}
+section main header .left-content .merk .right ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+section main header .left-content .merk .right ul i {
+  padding: 10px;
+  aspect-ratio: 1/1;
+  color: white;
+  background-color: black;
+}
+section main header .right-content {
+  width: 20%;
+}
+section main header .right-content img {
+  width: 300px;
+  aspect-ratio: 1/1;
+}
+section main section#product {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 20px;
+  padding: 0;
+}
+section main section#product .navigasi {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+section main section#product .navigasi .left-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+}
+section main section#product .navigasi .left-box .right {
+  font-size: 1.8rem;
+}
+section main section#product .navigasi .left-box .left {
+  font-size: 0.9rem;
+}
+section main section#product .navigasi .right-box {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  width: 20%;
+  font-size: 1.2rem;
+}
+section main section#product .main-product {
+  display: flex;
+}
+section main section#product .main-product .card-list {
+  height: 430px;
+  background-color: white;
+  overflow: auto;
+}
+section main section#product .main-product .card-list .card {
+  display: flex;
+  height: 400px;
+  gap: 12px;
+}
+section main section#product .main-product .card-list .card .card-1 {
+  padding: 15px;
+  border: 3px solid rgb(239, 239, 239);
+  height: 400px;
+  position: relative;
+}
+section main section#product .main-product .card-list .card .card-1:hover {
+  border: 1px solid black;
+}
+section main section#product .main-product .card-list .card .card-1 .product img {
+  width: 250px;
+  background-color: rgb(239, 239, 239);
+}
+section main section#product .main-product .card-list .card .card-1 .product p {
+  margin-top: 30px;
+  margin-left: 10px;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 0;
+}
+section main section#product .main-product .card-list .card .card-1 .product .text {
+  margin-top: 20px;
+}
+section main section#product .main-product .card-list .card .card-1 .product .attribute {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+}
+section main section#product .main-product .card-list .card .card-1 .product .attribute .color-sample {
+  display: flex;
+  width: 80%;
+  gap: 5px;
+}
+section main section#product .main-product .card-list .card .card-1 .product .attribute .color-sample .color-1 {
+  width: 10px;
+  height: 10px;
+  background-color: lightpink;
+}
+section main section#product .main-product .card-list .card .card-1 .product .attribute .color-sample .color-2 {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+}
+section main section#product .main-product .card-list .card .card-1 .product .attribute .color-sample h1 {
+  width: 20%;
+}
+section main section#product .main-product .card-list .card .card-2 {
+  padding: 15px;
+  border: 3px solid rgb(239, 239, 239);
+  height: 400px;
+}
+section main section#product .main-product .card-list .card .card-2:hover {
+  border: 1px solid black;
+}
+section main section#product .main-product .card-list .card .card-2 .product img {
+  width: 250px;
+  aspect-ratio: 1/1;
+  background-color: rgb(239, 239, 239);
+}
+section main section#product .main-product .card-list .card .card-2 .product .text {
+  margin-top: 20px;
+}
+section main section#product .main-product .card-list .card .card-2 .product .attribute {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+}
+section main section#product .main-product .card-list .card .card-2 .product .attribute .color-sample {
+  display: flex;
+  width: 80%;
+  gap: 5px;
+}
+section main section#product .main-product .card-list .card .card-2 .product .attribute .color-sample .color-1 {
+  width: 10px;
+  height: 10px;
+  background-color: lightgray;
+}
+section main section#product .main-product .card-list .card .card-2 .product .attribute .color-sample .color-2 {
+  width: 10px;
+  height: 10px;
+  background-color: maroon;
+}
+section main section#product .main-product .card-list .card .card-2 .product .attribute .color-sample .color-3 {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+}
+section main section#product .main-product .card-list .card .card-2 .product .attribute .color-sample h1 {
+  width: 20%;
+}
+section main section#product .main-product .card-list .card .card-3 {
+  padding: 15px;
+  border: 3px solid rgb(239, 239, 239);
+  height: 400px;
+}
+section main section#product .main-product .card-list .card .card-3:hover {
+  border: 1px solid black;
+}
+section main section#product .main-product .card-list .card .card-3 .product img {
+  width: 250px;
+  aspect-ratio: 1/1;
+  background-color: rgb(239, 239, 239);
+}
+section main section#product .main-product .card-list .card .card-3 .product .text {
+  margin-top: 20px;
+}
+section main section#product .main-product .card-list .card .card-3 .product .attribute {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+}
+section main section#product .main-product .card-list .card .card-3 .product .attribute .color-sample {
+  display: flex;
+  width: 80%;
+  gap: 5px;
+}
+section main section#product .main-product .card-list .card .card-3 .product .attribute .color-sample .color-1 {
+  width: 10px;
+  height: 10px;
+  background-color: lightgray;
+}
+section main section#product .main-product .card-list .card .card-3 .product .attribute .color-sample .color-2 {
+  width: 10px;
+  height: 10px;
+  background-color: lightblue;
+}
+section main section#product .main-product .card-list .card .card-3 .product .attribute .color-sample h1 {
+  width: 20%;
+}
+section main section#product .main-product .card-list .card .card-4 {
+  padding: 15px;
+  border: 3px solid rgb(239, 239, 239);
+  height: 400px;
+}
+section main section#product .main-product .card-list .card .card-4:hover {
+  border: 1px solid black;
+}
+section main section#product .main-product .card-list .card .card-4 .product img {
+  width: 250px;
+  aspect-ratio: 1/1;
+  background-color: rgb(239, 239, 239);
+}
+section main section#product .main-product .card-list .card .card-4 .product .text {
+  margin-top: 20px;
+}
+section main section#product .main-product .card-list .card .card-4 .product .attribute {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+}
+section main section#product .main-product .card-list .card .card-4 .product .attribute .color-sample {
+  display: flex;
+  width: 80%;
+  gap: 5px;
+}
+section main section#product .main-product .card-list .card .card-4 .product .attribute .color-sample .color-1 {
+  width: 10px;
+  height: 10px;
+  background-color: lightsalmon;
+}
+section main section#product .main-product .card-list .card .card-4 .product .attribute .color-sample .color-2 {
+  width: 10px;
+  height: 10px;
+  background-color: cyan;
+}
+section main section#product .main-product .card-list .card .card-4 .product .attribute .color-sample h1 {
+  width: 20%;
+}
+section main section#product .main-product .card-list .card .card-5 {
+  padding: 15px;
+  border: 3px solid rgb(239, 239, 239);
+  height: 400px;
+}
+section main section#product .main-product .card-list .card .card-5:hover {
+  border: 1px solid black;
+}
+section main section#product .main-product .card-list .card .card-5 .product img {
+  width: 250px;
+  aspect-ratio: 1/1;
+  background-color: rgb(239, 239, 239);
+}
+section main section#product .main-product .card-list .card .card-5 .product .text {
+  margin-top: 20px;
+}
+section main section#product .main-product .card-list .card .card-5 .product .attribute {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+}
+section main section#product .main-product .card-list .card .card-5 .product .attribute .color-sample {
+  display: flex;
+  width: 80%;
+  gap: 5px;
+}
+section main section#product .main-product .card-list .card .card-5 .product .attribute .color-sample .color-1 {
+  width: 10px;
+  height: 10px;
+  background-color: lightpink;
+}
+section main section#product .main-product .card-list .card .card-5 .product .attribute .color-sample .color-2 {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+}
+section main section#product .main-product .card-list .card .card-5 .product .attribute .color-sample h1 {
+  width: 20%;
+}
+section main section#product .main-product .card-list .card .card-6 {
+  padding: 15px;
+  border: 3px solid rgb(239, 239, 239);
+  height: 400px;
+}
+section main section#product .main-product .card-list .card .card-6:hover {
+  border: 1px solid black;
+}
+section main section#product .main-product .card-list .card .card-6 .product img {
+  width: 250px;
+  aspect-ratio: 1/1;
+  background-color: rgb(239, 239, 239);
+}
+section main section#product .main-product .card-list .card .card-6 .product .text {
+  margin-top: 20px;
+}
+section main section#product .main-product .card-list .card .card-6 .product .attribute {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+}
+section main section#product .main-product .card-list .card .card-6 .product .attribute .color-sample {
+  display: flex;
+  width: 80%;
+  gap: 5px;
+}
+section main section#product .main-product .card-list .card .card-6 .product .attribute .color-sample .color-1 {
+  width: 10px;
+  height: 10px;
+  background-color: lightgray;
+}
+section main section#product .main-product .card-list .card .card-6 .product .attribute .color-sample .color-2 {
+  width: 10px;
+  height: 10px;
+  background-color: maroon;
+}
+section main section#product .main-product .card-list .card .card-6 .product .attribute .color-sample .color-3 {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+}
+section main section#product .main-product .card-list .card .card-6 .product .attribute .color-sample h1 {
+  width: 20%;
+}
+section main section#product .main-product .card-list .card .card-7 {
+  padding: 15px;
+  border: 3px solid rgb(239, 239, 239);
+  height: 400px;
+}
+section main section#product .main-product .card-list .card .card-7:hover {
+  border: 1px solid black;
+}
+section main section#product .main-product .card-list .card .card-7 .product img {
+  width: 250px;
+  aspect-ratio: 1/1;
+  background-color: rgb(239, 239, 239);
+}
+section main section#product .main-product .card-list .card .card-7 .product .text {
+  margin-top: 20px;
+}
+section main section#product .main-product .card-list .card .card-7 .product .attribute {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+}
+section main section#product .main-product .card-list .card .card-7 .product .attribute .color-sample {
+  display: flex;
+  width: 80%;
+  gap: 5px;
+}
+section main section#product .main-product .card-list .card .card-7 .product .attribute .color-sample .color-1 {
+  width: 10px;
+  height: 10px;
+  background-color: lightgray;
+}
+section main section#product .main-product .card-list .card .card-7 .product .attribute .color-sample .color-2 {
+  width: 10px;
+  height: 10px;
+  background-color: lightblue;
+}
+section main section#product .main-product .card-list .card .card-7 .product .attribute .color-sample h1 {
+  width: 20%;
+}
+section main section#product .main-product .card-list .card .card-8 {
+  padding: 15px;
+  border: 3px solid rgb(239, 239, 239);
+  height: 400px;
+}
+section main section#product .main-product .card-list .card .card-8:hover {
+  border: 1px solid black;
+}
+section main section#product .main-product .card-list .card .card-8 .product img {
+  width: 250px;
+  aspect-ratio: 1/1;
+  background-color: rgb(239, 239, 239);
+}
+section main section#product .main-product .card-list .card .card-8 .product .text {
+  margin-top: 20px;
+}
+section main section#product .main-product .card-list .card .card-8 .product .attribute {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+}
+section main section#product .main-product .card-list .card .card-8 .product .attribute .color-sample {
+  display: flex;
+  width: 80%;
+  gap: 5px;
+}
+section main section#product .main-product .card-list .card .card-8 .product .attribute .color-sample .color-1 {
+  width: 10px;
+  height: 10px;
+  background-color: lightsalmon;
+}
+section main section#product .main-product .card-list .card .card-8 .product .attribute .color-sample .color-2 {
+  width: 10px;
+  height: 10px;
+  background-color: cyan;
+}
+section main section#product .main-product .card-list .card .card-8 .product .attribute .color-sample h1 {
+  width: 20%;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,1316 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&display=swap");
+* {
+  font-family: "Comfortaa";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html body {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  display: flex;
+  width: 100%;
+}
+section aside {
+  justify-content: center;
+  width: 6%;
+  padding: 20px;
+  font-size: 0.8rem;
+  background-color: #dae5f2;
+}
+section aside .logo {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff6f00;
+}
+section aside .list-actions ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: gray;
+  gap: 20px;
+  padding-top: 40px;
+}
+section aside .list-actions ul li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+section aside .list-actions ul li a {
+  font-size: 1.2rem;
+  padding: 9px;
+  border-radius: 50%;
+  color: gray;
+  text-decoration: none;
+}
+section aside .list-actions ul li a:hover {
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 50%;
+}
+section aside .actions ul {
+  color: grey;
+  justify-content: flex-end;
+  padding-top: 300px;
+}
+section aside .actions ul li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+section aside .actions ul li a {
+  font-size: 1.2rem;
+  padding: 9px;
+  border-radius: 50%;
+  color: gray;
+  text-decoration: none;
+}
+section aside .actions ul li a:hover {
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 50%;
+}
+section main {
+  width: 94%;
+}
+section main nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: #dae5f2;
+}
+section main nav .nav-list {
+  display: flex;
+  width: 80%;
+}
+section main nav .nav-list .product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  width: 150px;
+  height: 30px;
+  border-left: 3px solid grey;
+}
+section main nav .nav-list .selected {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  width: 100px;
+  height: 30px;
+  color: gray;
+}
+section main nav .left-profile {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+section main nav .left-profile .order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  width: 120px;
+  height: 40px;
+  gap: 8px;
+  border-radius: 1vh;
+  color: white;
+  background-color: dodgerblue;
+}
+section main nav .left-profile .icon-list ul {
+  display: flex;
+  margin-right: 5px;
+  height: 40px;
+  gap: 12px;
+}
+section main nav .left-profile .icon-list ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+section main nav .left-profile .icon-list ul li:nth-child(3) {
+  font-size: 18px;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: orange;
+  border-radius: 50%;
+}
+section main header {
+  background-color: #dae5f2;
+  padding: 0 20px 20px 0;
+}
+section main header .container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: white;
+  border-radius: 2vh;
+  padding: 25px 40px 0 40px;
+}
+section main header .container .top {
+  display: flex;
+  width: 100%;
+  height: 450px;
+  gap: 50px;
+}
+section main header .container .top .left {
+  display: flex;
+  width: 70%;
+  height: 100%;
+  border: 2px solid;
+  background-color: rgb(255, 238, 108);
+  border-radius: 3.5vh;
+  position: relative;
+}
+section main header .container .top .left .left-description {
+  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 40%;
+  padding: 25px;
+}
+section main header .container .top .left .left-description .inner-top {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+}
+section main header .container .top .left .left-description .inner-top .head h1 {
+  font-size: 3rem;
+}
+section main header .container .top .left .left-description .inner-middle {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  width: 70%;
+  height: 70%;
+}
+section main header .container .top .left .left-description .inner-middle .coloum {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 60%;
+  background-color: white;
+  border-radius: 1.5vh;
+  padding: 15px;
+}
+section main header .container .top .left .left-description .inner-middle .coloum h1 {
+  font-size: 1rem;
+}
+section main header .container .top .left .left-description .inner-middle .coloum h3 {
+  color: orange;
+  font-size: 1.2rem;
+}
+section main header .container .top .left .left-description .inner-middle .coloum h3 s {
+  color: black;
+}
+section main header .container .top .left .left-description .inner-middle .coloum .variant {
+  display: flex;
+  align-items: center;
+}
+section main header .container .top .left .left-description .inner-middle .coloum .variant .text {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  font-size: 0.7;
+}
+section main header .container .top .left .left-description .inner-middle .coloum .variant .colors {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  width: 60%;
+}
+section main header .container .top .left .left-description .inner-middle .coloum .variant .colors .color-1 {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+}
+section main header .container .top .left .left-description .inner-middle .coloum .variant .colors .color-2 {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+}
+section main header .container .top .left .left-description .inner-middle .coloum .variant .colors .color-3 {
+  width: 10px;
+  height: 10px;
+  background-color: orange;
+}
+section main header .container .top .left .left-description .inner-middle .coloum .variant .colors .color-4 {
+  width: 10px;
+  height: 10px;
+  background-color: yellow;
+}
+section main header .container .top .left .left-description .inner-middle .coloum .variant .colors .color-5 {
+  width: 10px;
+  height: 10px;
+  background-color: green;
+}
+section main header .container .top .left .left-description .inner-bottom {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+section main header .container .top .left .left-description .inner-bottom .new-hot {
+  display: flex;
+}
+section main header .container .top .left .left-description .inner-bottom .new-hot .new {
+  border-radius: 0 0 0 3.5vh;
+  width: 100px;
+  background-color: rgb(255, 149, 0);
+  color: white;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section main header .container .top .left .left-description .inner-bottom .new-hot .hot {
+  border-radius: 0 3.5vh 0 0;
+  width: 100px;
+  background-color: dodgerblue;
+  color: white;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section main header .container .top .left .right-item {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+  position: relative;
+}
+section main header .container .top .left .right-item .shoes {
+  width: 100%;
+}
+section main header .container .top .left .right-item .shoes img {
+  margin-top: -10px;
+  margin-left: 50px;
+  width: 680px;
+  rotate: -30deg;
+  right: 0;
+  position: absolute;
+}
+section main header .container .top .right {
+  width: 30%;
+  border-radius: 3.5vh;
+  background-color: aquamarine;
+  padding: 20px;
+}
+section main header .container .top .right .outer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+section main header .container .top .right .outer .left-graph {
+  justify-content: space-between;
+  width: 8%;
+  padding: 5px;
+}
+section main header .container .top .right .outer .left-graph .top {
+  height: 15%;
+  border-radius: 1vh;
+  background-color: #c499ff;
+}
+section main header .container .top .right .outer .left-graph .parameters {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  height: 70%;
+  padding-top: 30px;
+  justify-content: space-between;
+}
+section main header .container .top .right .outer .right-graph {
+  display: flex;
+  flex-direction: column;
+  width: 92%;
+  padding: 10px;
+}
+section main header .container .top .right .outer .right-graph .top {
+  display: flex;
+  align-items: center;
+  height: 12%;
+}
+section main header .container .top .right .outer .right-graph .top .title {
+  display: flex;
+  align-items: center;
+  width: 55%;
+  font-size: 1.3rem;
+}
+section main header .container .top .right .outer .right-graph .top .selected {
+  display: flex;
+  justify-content: center;
+  width: 45%;
+  padding: 10px;
+  font-size: 0.8rem;
+  border: 2.5px solid white;
+  border-radius: 2vh;
+}
+section main header .container .top .right .outer .right-graph .top .selected ul {
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
+}
+section main header .container .top .right .outer .right-graph .bottom {
+  display: flex;
+  padding-top: 30px;
+  height: 85%;
+  font-size: 1rem;
+}
+section main header .container .top .right .outer .right-graph .bottom .outer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100%;
+}
+section main header .container .top .right .outer .right-graph .bottom .outer .bar-1 {
+  height: 100%;
+}
+section main header .container .top .right .outer .right-graph .bottom .outer .bar-1 .box-long {
+  height: 70%;
+  background-color: #985fe8;
+}
+section main header .container .top .right .outer .right-graph .bottom .outer .bar-1 .box-short {
+  padding-top: 10px;
+  height: 10%;
+}
+section main header .container .top .right .outer .right-graph .bottom .outer .bar-2 {
+  height: 100%;
+}
+section main header .container .top .right .outer .right-graph .bottom .outer .bar-2 .box-long {
+  height: 65%;
+  background-color: #ffd09e;
+}
+section main header .container .top .right .outer .right-graph .bottom .outer .bar-2 .box-short {
+  padding-top: 10px;
+  height: 10%;
+}
+section main header .container .top .right .outer .right-graph .bottom .outer .bar-3 {
+  height: 100%;
+}
+section main header .container .top .right .outer .right-graph .bottom .outer .bar-3 .box-long {
+  height: 90%;
+  background-color: #1c64ff;
+}
+section main header .container .top .right .outer .right-graph .bottom .outer .bar-3 .box-short {
+  padding-top: 10px;
+  height: 10%;
+}
+section main header .container .top .right .outer .right-graph .bottom .outer .bar-4 {
+  height: 100%;
+}
+section main header .container .top .right .outer .right-graph .bottom .outer .bar-4 .box-long {
+  height: 60%;
+  background-color: #985fe8;
+}
+section main header .container .top .right .outer .right-graph .bottom .outer .bar-4 .box-short {
+  padding-top: 10px;
+  height: 10%;
+}
+section main header .container .top .right .outer .right-graph .bottom .outer .bar-5 {
+  height: 100%;
+}
+section main header .container .top .right .outer .right-graph .bottom .outer .bar-5 .box-long {
+  height: 73%;
+  background-color: #c499ff;
+}
+section main header .container .top .right .outer .right-graph .bottom .outer .bar-5 .box-short {
+  padding-top: 10px;
+  height: 10%;
+}
+section main header .container .top .right .outer .right-graph .bottom .outer .bar-6 {
+  height: 100%;
+}
+section main header .container .top .right .outer .right-graph .bottom .outer .bar-6 .box-long {
+  height: 50%;
+  background-color: #ffd09e;
+}
+section main header .container .top .right .outer .right-graph .bottom .outer .bar-6 .box-short {
+  padding-top: 10px;
+  height: 10%;
+}
+section main header .container .top .right .outer .right-graph .bottom .outer .bar-7 {
+  height: 100%;
+}
+section main header .container .top .right .outer .right-graph .bottom .outer .bar-7 .box-long {
+  height: 68%;
+  background-color: aliceblue;
+}
+section main header .container .top .right .outer .right-graph .bottom .outer .bar-7 .box-short {
+  padding-top: 10px;
+  height: 10%;
+}
+section main header .container .bottom-header {
+  display: flex;
+  width: 100%;
+  height: 55%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+section main header .container .bottom-header .container-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  gap: 50px;
+}
+section main header .container .bottom-header .container-bottom .left-product {
+  width: 80%;
+}
+section main header .container .bottom-header .container-bottom .left-product .top {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 30px;
+}
+section main header .container .bottom-header .container-bottom .left-product .top .box-1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  gap: 20px;
+}
+section main header .container .bottom-header .container-bottom .left-product .top .box-1 .green-box {
+  width: 20px;
+  height: 45px;
+  background-color: greenyellow;
+  border-radius: 1vh;
+}
+section main header .container .bottom-header .container-bottom .left-product .top .box-1 .title-box {
+  width: 100%;
+  font-size: 0.9rem;
+}
+section main header .container .bottom-header .container-bottom .left-product .top .box-2 {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  gap: 10px;
+}
+section main header .container .bottom-header .container-bottom .left-product .top .box-2 select {
+  border-radius: 2vh;
+  width: 150px;
+  height: 45px;
+}
+section main header .container .bottom-header .container-bottom .left-product .top .box-2 button {
+  border: none;
+  border-radius: 2vh;
+  background-color: dodgerblue;
+  color: white;
+  width: 100px;
+  height: 45px;
+}
+section main header .container .bottom-header .container-bottom .left-product .top .box-2 button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid grey;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom {
+  width: 100%;
+  padding-top: 5px;
+  overflow: auto;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-1 {
+  height: 100%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-1:hover {
+  border: 1px solid gray;
+  border-radius: 2vh;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-1 .product {
+  align-items: center;
+  padding: 20px 15px 0 0;
+  height: 200px;
+  border-radius: 2vh;
+  background-color: #55faa2;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-1 .product img {
+  width: 200px;
+  rotate: -25deg;
+  filter: drop-shadow(6px 6px 5px #232323);
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-1 .description {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  height: 100px;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-1 .description .text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-1 .description .text h1 {
+  font-size: 1rem;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-1 .description .text span {
+  font-size: 0.8rem;
+  color: orange;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-1 .description .text span:nth-child(2) {
+  color: black;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-1 .description .attribute {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-1 .description .attribute .colors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  font-size: 0.9rem;
+  color: blue;
+  background-color: lightcyan;
+  border-radius: 2vh;
+  width: 40%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-1 .description .attribute .color-sample {
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+  gap: 5px;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-1 .description .attribute .color-sample .color-1 {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-1 .description .attribute .color-sample .color-2 {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-1 .description .attribute .color-sample .color-3 {
+  width: 10px;
+  height: 10px;
+  background-color: orange;
+  border-radius: 50%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-1 .description .attribute .color-sample .color-4 {
+  width: 10px;
+  height: 10px;
+  background-color: yellow;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-1 .description .attribute .color-sample h1 {
+  width: 20%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-2 {
+  height: 100%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-2:hover {
+  border: 1px solid gray;
+  border-radius: 2vh;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-2 .product {
+  align-items: center;
+  height: 200px;
+  padding: 20px 15px 0 0;
+  border-radius: 2vh;
+  background-color: #ffbdee;
+  position: relative;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-2 .product img {
+  width: 200px;
+  rotate: -25deg;
+  filter: drop-shadow(6px 6px 5px #232323);
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-2 .product .pop-up {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: #1c64ff;
+  width: 50px;
+  padding: 4px;
+  font-size: 0.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 2vh 0 2vh 0;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-2 .description {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  height: 100px;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-2 .description .text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-2 .description .text h1 {
+  font-size: 1rem;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-2 .description .text span {
+  font-size: 0.8rem;
+  color: orange;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-2 .description .text span:nth-child(2) {
+  color: black;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-2 .description .attribute {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-2 .description .attribute .colors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  font-size: 0.9rem;
+  color: blue;
+  background-color: lightcyan;
+  border-radius: 2vh;
+  width: 40%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-2 .description .attribute .color-sample {
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+  gap: 5px;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-2 .description .attribute .color-sample .color-1 {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-2 .description .attribute .color-sample .color-2 {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-2 .description .attribute .color-sample .color-3 {
+  width: 10px;
+  height: 10px;
+  background-color: orange;
+  border-radius: 50%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-2 .description .attribute .color-sample .color-4 {
+  width: 10px;
+  height: 10px;
+  background-color: yellow;
+  border-radius: 50%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-2 .description .attribute .color-sample h1 {
+  width: 20%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-3 {
+  height: 100%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-3:hover {
+  border: 1px solid gray;
+  border-radius: 2vh;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-3 .product {
+  align-items: center;
+  height: 200px;
+  padding: 20px 15px 0 0;
+  border-radius: 2vh;
+  background-color: #9661ff;
+  position: relative;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-3 .product img {
+  margin-top: 20px;
+  width: 200px;
+  rotate: -25deg;
+  filter: drop-shadow(6px 6px 5px #232323);
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-3 .product .pop-up {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-3 .product .pop-up .new {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: orange;
+  width: 50px;
+  padding: 4px;
+  font-size: 0.5rem;
+  border-radius: 2vh 0 0 0;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-3 .product .pop-up .hot {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: #1c64ff;
+  width: 50px;
+  padding: 4px;
+  font-size: 0.5rem;
+  border-radius: 0 0 2vh 0;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-3 .description {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  height: 100px;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-3 .description .text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-3 .description .text h1 {
+  font-size: 1rem;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-3 .description .text span {
+  font-size: 0.8rem;
+  color: orange;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-3 .description .text span:nth-child(2) {
+  color: black;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-3 .description .attribute {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-3 .description .attribute .colors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  font-size: 0.9rem;
+  color: blue;
+  background-color: lightcyan;
+  border-radius: 2vh;
+  width: 40%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-3 .description .attribute .color-sample {
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+  gap: 5px;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-3 .description .attribute .color-sample .color-1 {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-3 .description .attribute .color-sample .color-2 {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-3 .description .attribute .color-sample .color-3 {
+  width: 10px;
+  height: 10px;
+  background-color: orange;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-3 .description .attribute .color-sample .color-4 {
+  width: 10px;
+  height: 10px;
+  background-color: yellow;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-3 .description .attribute .color-sample h1 {
+  width: 20%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-4 {
+  height: 100%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-4:hover {
+  border: 1px solid gray;
+  border-radius: 2vh;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-4 .product {
+  align-items: center;
+  padding: 20px 15px 0 0;
+  height: 200px;
+  border-radius: 2vh;
+  background-color: #47f0ff;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-4 .product img {
+  width: 200px;
+  rotate: -25deg;
+  filter: drop-shadow(6px 6px 5px #232323);
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-4 .description {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  height: 100px;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-4 .description .text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-4 .description .text h1 {
+  font-size: 1rem;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-4 .description .text span {
+  font-size: 0.8rem;
+  color: orange;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-4 .description .text span:nth-child(2) {
+  color: black;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-4 .description .attribute {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-4 .description .attribute .colors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  font-size: 0.9rem;
+  color: blue;
+  background-color: lightcyan;
+  border-radius: 2vh;
+  width: 40%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-4 .description .attribute .color-sample {
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+  gap: 5px;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-4 .description .attribute .color-sample .color-1 {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-4 .description .attribute .color-sample .color-2 {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-4 .description .attribute .color-sample .color-3 {
+  width: 10px;
+  height: 10px;
+  background-color: orange;
+  border-radius: 50%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-4 .description .attribute .color-sample .color-4 {
+  width: 10px;
+  height: 10px;
+  background-color: yellow;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-4 .description .attribute .color-sample h1 {
+  width: 20%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-5 {
+  height: 100%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-5:hover {
+  border: 1px solid gray;
+  border-radius: 2vh;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-5 .product {
+  align-items: center;
+  padding: 20px 15px 0 0;
+  height: 200px;
+  border-radius: 2vh;
+  background-color: #55faa2;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-5 .product img {
+  width: 200px;
+  rotate: -25deg;
+  filter: drop-shadow(6px 6px 5px #232323);
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-5 .description {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  height: 100px;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-5 .description .text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-5 .description .text h1 {
+  font-size: 1rem;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-5 .description .text span {
+  font-size: 0.8rem;
+  color: orange;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-5 .description .text span:nth-child(2) {
+  color: black;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-5 .description .attribute {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-5 .description .attribute .colors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  font-size: 0.9rem;
+  color: blue;
+  background-color: lightcyan;
+  border-radius: 2vh;
+  width: 40%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-5 .description .attribute .color-sample {
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+  gap: 5px;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-5 .description .attribute .color-sample .color-1 {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-5 .description .attribute .color-sample .color-2 {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-5 .description .attribute .color-sample .color-3 {
+  width: 10px;
+  height: 10px;
+  background-color: orange;
+  border-radius: 50%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-5 .description .attribute .color-sample .color-4 {
+  width: 10px;
+  height: 10px;
+  background-color: yellow;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-5 .description .attribute .color-sample h1 {
+  width: 20%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-6 {
+  height: 100%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-6:hover {
+  border: 1px solid gray;
+  border-radius: 2vh;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-6 .product {
+  align-items: center;
+  height: 200px;
+  padding: 20px 15px 0 0;
+  border-radius: 2vh;
+  background-color: #ffbdee;
+  position: relative;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-6 .product img {
+  width: 200px;
+  rotate: -25deg;
+  filter: drop-shadow(6px 6px 5px #232323);
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-6 .product .pop-up {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: #1c64ff;
+  width: 50px;
+  padding: 4px;
+  font-size: 0.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 2vh 0 2vh 0;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-6 .description {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  height: 100px;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-6 .description .text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-6 .description .text h1 {
+  font-size: 1rem;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-6 .description .text span {
+  font-size: 0.8rem;
+  color: orange;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-6 .description .text span:nth-child(2) {
+  color: black;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-6 .description .attribute {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-6 .description .attribute .colors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  font-size: 0.9rem;
+  color: blue;
+  background-color: lightcyan;
+  border-radius: 2vh;
+  width: 40%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-6 .description .attribute .color-sample {
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+  gap: 5px;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-6 .description .attribute .color-sample .color-1 {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-6 .description .attribute .color-sample .color-2 {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-6 .description .attribute .color-sample .color-3 {
+  width: 10px;
+  height: 10px;
+  background-color: orange;
+  border-radius: 50%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-6 .description .attribute .color-sample .color-4 {
+  width: 10px;
+  height: 10px;
+  background-color: yellow;
+  border-radius: 50%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-6 .description .attribute .color-sample h1 {
+  width: 20%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-7 {
+  height: 100%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-7:hover {
+  border: 1px solid gray;
+  border-radius: 2vh;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-7 .product {
+  align-items: center;
+  height: 200px;
+  padding: 20px 15px 0 0;
+  border-radius: 2vh;
+  background-color: #9661ff;
+  position: relative;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-7 .product img {
+  margin-top: 20px;
+  width: 200px;
+  rotate: -25deg;
+  filter: drop-shadow(6px 6px 5px #232323);
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-7 .product .pop-up {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-7 .product .pop-up .new {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: orange;
+  width: 50px;
+  padding: 4px;
+  font-size: 0.5rem;
+  border-radius: 2vh 0 0 0;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-7 .product .pop-up .hot {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: #1c64ff;
+  width: 50px;
+  padding: 4px;
+  font-size: 0.5rem;
+  border-radius: 0 0 2vh 0;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-7 .description {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  height: 100px;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-7 .description .text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-7 .description .text h1 {
+  font-size: 1rem;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-7 .description .text span {
+  font-size: 0.8rem;
+  color: orange;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-7 .description .text span:nth-child(2) {
+  color: black;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-7 .description .attribute {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-7 .description .attribute .colors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  font-size: 0.9rem;
+  color: blue;
+  background-color: lightcyan;
+  border-radius: 2vh;
+  width: 40%;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-7 .description .attribute .color-sample {
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+  gap: 5px;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-7 .description .attribute .color-sample .color-1 {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-7 .description .attribute .color-sample .color-2 {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-7 .description .attribute .color-sample .color-3 {
+  width: 10px;
+  height: 10px;
+  background-color: orange;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-7 .description .attribute .color-sample .color-4 {
+  width: 10px;
+  height: 10px;
+  background-color: yellow;
+}
+section main header .container .bottom-header .container-bottom .left-product .bottom .card .card-7 .description .attribute .color-sample h1 {
+  width: 20%;
+}
+section main header .container .bottom-header .container-bottom .right-description {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+section main header .container .bottom-header .container-bottom .right-description .icon-profile-1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  height: 50%;
+}
+section main header .container .bottom-header .container-bottom .right-description .icon-profile-1 ul i {
+  font-size: 1.5rem;
+  background-color: rgb(144, 255, 164);
+  border-radius: 50%;
+  padding: 15px;
+}
+section main header .container .bottom-header .container-bottom .right-description .icon-profile-1 .product-reached {
+  display: flex;
+  font-size: 0.7rem;
+}
+section main header .container .bottom-header .container-bottom .right-description .icon-profile-1 .product-reached span i {
+  margin-left: 10px;
+}
+section main header .container .bottom-header .container-bottom .right-description .icon-profile-1 .product-rate {
+  font-size: 1.5rem;
+}
+section main header .container .bottom-header .container-bottom .right-description .icon-profile-1 .product-activity {
+  display: flex;
+  font-size: 0.7rem;
+  gap: 5px;
+}
+section main header .container .bottom-header .container-bottom .right-description .icon-profile-1 .product-activity .icon-activity {
+  color: #22b868;
+}
+section main header .container .bottom-header .container-bottom .right-description .icon-profile-2 {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  height: 50%;
+}
+section main header .container .bottom-header .container-bottom .right-description .icon-profile-2 ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  background-color: #d7bbff;
+}
+section main header .container .bottom-header .container-bottom .right-description .icon-profile-2 ul i {
+  font-size: 1.5rem;
+}
+section main header .container .bottom-header .container-bottom .right-description .icon-profile-2 .engagement {
+  display: flex;
+  font-size: 0.7rem;
+}
+section main header .container .bottom-header .container-bottom .right-description .icon-profile-2 .engagement span i {
+  margin-left: 10px;
+}
+section main header .container .bottom-header .container-bottom .right-description .icon-profile-2 .product-evolve {
+  font-size: 1.5rem;
+}
+section main header .container .bottom-header .container-bottom .right-description .icon-profile-2 .product-activity {
+  display: flex;
+  font-size: 0.7rem;
+  gap: 5px;
+}
+section main header .container .bottom-header .container-bottom .right-description .icon-profile-2 .product-activity .icon-activity {
+  color: #22b868;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,1328 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&display=swap');
+* {
+    font-family: 'Comfortaa';
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html body{
+    width: 100%;
+    height: 100%;
+}
+section{
+    display: flex;
+    width: 100%;
+    aside{
+        justify-content: center;
+        width: 6%;
+        padding: 20px;
+        font-size: 0.8rem;
+        background-color: #dae5f2;
+        .logo{
+            font-size: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ff6f00;
+        }
+        .list-actions{
+            ul{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                color: gray;
+                gap: 20px;
+                padding-top: 40px;
+                li{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    a{
+                        font-size: 1.2rem;
+                        padding: 9px;
+                        border-radius: 50%;
+                        color: gray;
+                        text-decoration: none;
+                        &:hover {
+                            background-color: dodgerblue;
+                            color: white;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
+        .actions{
+            ul{
+                color: grey;
+                justify-content: flex-end;
+                padding-top: 300px;
+                li{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    a{
+                        font-size: 1.2rem;
+                        padding: 9px;
+                        border-radius: 50%;
+                        color: gray;
+                        text-decoration: none;
+                        &:hover {
+                            background-color: dodgerblue;
+                            color: white;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{
+        width: 94%;
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 60px;
+            background-color: #dae5f2;
+            .nav-list{
+                display: flex;
+                width: 80%;
+                .product{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1.2rem;
+                    width: 150px;
+                    height: 30px;
+                    border-left: 3px solid grey
+                }
+                .selected{
+                    display: flex;
+                    align-items: center;
+                    font-size: 1.2rem;
+                    width: 100px;
+                    height: 30px;
+                    color: gray;
+                }
+            }
+            .left-profile{
+                width: 20%;
+                display: flex;
+                justify-content: flex-end;
+                gap: 20px;
+                .order{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 0.8rem;
+                    width: 120px;
+                    height: 40px;
+                    gap: 8px;
+                    border-radius: 1vh;
+                    color: white;
+                    background-color: dodgerblue;
+                }
+                .icon-list{
+                    ul{
+                        display: flex;
+                        margin-right: 5px;
+                        height: 40px;
+                        gap: 12px;
+                        li{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            font-size: 15px;
+                            &:nth-child(3){
+                                font-size: 18px;
+                                justify-content: center;
+                                width: 40px;
+                                height: 40px;
+                                background-color: orange;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        header{
+            background-color: #dae5f2;
+            padding: 0 20px 20px 0;
+            .container{
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                background-color: white;
+                border-radius: 2vh;
+                padding: 25px 40px 0 40px;
+                .top{
+                    display: flex;
+                    width: 100%;
+                    height: 450px;
+                    gap: 50px;
+                    .left{
+                        display: flex;
+                        width: 70%;
+                        height: 100%;
+                        border: 2px solid;
+                        background-color: rgb(255, 238, 108);
+                        border-radius: 3.5vh;
+                        position: relative;
+                        .left-description{
+                            gap: 10px;
+                            display: flex;
+                            justify-content: space-between;
+                            flex-direction: column;
+                            width: 40%;
+                            padding: 25px;
+                            .inner-top{
+                                display: flex;
+                                align-items: center;
+                                width: 100%;
+                                height: 20%;
+                                .head{
+                                    h1{
+                                        font-size: 3rem;
+                                    }
+                                }
+                            }
+                            .inner-middle{
+                                display: flex;
+                                justify-content: center;
+                                padding: 10px;
+                                width: 70%;
+                                height: 70%;
+                                .coloum{
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-around;
+                                    width: 100%;
+                                    height: 60%;
+                                    background-color: white;
+                                    border-radius: 1.5vh;
+                                    padding: 15px;
+                                    h1{
+                                        font-size: 1rem;
+                                    }
+                                    h3{
+                                        color: orange;
+                                        font-size: 1.2rem;
+                                        s{
+                                            color: black;
+                                        }
+                                    }
+                                    .variant{
+                                        display: flex;
+                                        align-items: center;
+                                        .text{
+                                            display: flex;
+                                            align-items: center;
+                                            width: 40%;
+                                            font-size: 0.7;
+                                        }
+                                        .colors{
+                                            display: flex;
+                                            justify-content: flex-end;
+                                            gap: 8px;
+                                            width: 60%;
+                                            .color-1{
+                                                width: 10px;
+                                                height: 10px;
+                                                background-color: black;
+                                            }
+                                            .color-2{
+                                                width: 10px;
+                                                height: 10px;
+                                                background-color: red;
+                                            }
+                                            .color-3{
+                                                width: 10px;
+                                                height: 10px;
+                                                background-color: orange;
+                                            }
+                                            .color-4{
+                                                width: 10px;
+                                                height: 10px;
+                                                background-color: yellow;
+                                            }
+                                            .color-5{
+                                                width: 10px;
+                                                height: 10px;
+                                                background-color:green;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .inner-bottom{
+                                display: flex;
+                                width: 100%;
+                                height: 10%;
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                .new-hot{
+                                    display: flex;
+                                    .new{
+                                        border-radius: 0 0 0 3.5vh;
+                                        width: 100px;
+                                        background-color: rgb(255, 149, 0);
+                                        color: white;
+                                        font-size: 0.8rem;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                    }
+                                    .hot{
+                                        border-radius: 0 3.5vh 0 0;
+                                        width: 100px;
+                                        background-color: dodgerblue;
+                                        color: white;
+                                        font-size: 0.8rem;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                    }
+                                }
+                            }
+                        }
+                        .right-item{
+                            display: flex;
+                            flex-direction: column;
+                            width: 60%;
+                            height: 100%;
+                            position: relative;
+                            .shoes{
+                                width: 100%;
+                                img{
+                                    margin-top: -10px;
+                                    margin-left: 50px;
+                                    width: 680px;
+                                    rotate: -30deg;
+                                    right: 0;
+                                    position: absolute;
+                                }
+                            }
+                        }
+                    }
+                    .right{
+                        width: 30%;
+                        border-radius: 3.5vh;
+                        background-color: aquamarine;
+                        padding: 20px;
+                        .outer{
+                            display: flex;
+                            width: 100%;
+                            height: 100%;
+                            .left-graph{
+                                justify-content: space-between;
+                                width: 8%;
+                                padding: 5px;
+                                .top{
+                                    height: 15%;
+                                    border-radius: 1vh;
+                                    background-color: #c499ff;
+                                }
+                                .parameters{
+                                    display: flex;
+                                    flex-direction: column;
+                                    font-size: 1rem;
+                                    height: 70%;
+                                    padding-top: 30px;
+                                    justify-content: space-between;
+                                }
+                            }
+                            .right-graph{
+                                display: flex;
+                                flex-direction: column;
+                                width: 92%;
+                                padding: 10px;
+                                .top{
+                                    display: flex;
+                                    align-items: center;
+                                    height: 12%;
+                                    .title{
+                                        display: flex;
+                                        align-items: center;
+                                        width: 55%;
+                                        font-size: 1.3rem;
+                                    }
+                                    .selected{
+                                        display: flex;
+                                        justify-content: center;
+                                        width: 45%;
+                                        padding: 10px;
+                                        font-size: 0.8rem;
+                                        border: 2.5px solid white;
+                                        border-radius: 2vh;
+                                        ul{
+                                            display: flex;
+                                            gap: 10px;
+                                            list-style-type: none;
+                                        }
+                                    }
+                                }
+                                .bottom{
+                                    display: flex;
+                                    padding-top: 30px;
+                                    height: 85%;
+                                    font-size: 1rem;
+                                    .outer{
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: flex-end;
+                                        height: 100%;
+                                        .bar-1{
+                                            height: 100%;
+                                            .box-long{
+                                                height: 70%;
+                                                background-color: #985fe8;
+                                            }
+                                            .box-short{
+                                                padding-top: 10px;
+                                                height: 10%;
+                                            }
+                                        }
+                                        .bar-2{
+                                            height: 100%;
+                                            .box-long{
+                                                height: 65%;
+                                                background-color: #ffd09e;
+                                            }
+                                            .box-short{
+                                                padding-top: 10px;
+                                                height: 10%;
+                                            }
+                                        }
+                                        .bar-3{
+                                            height: 100%;
+                                            .box-long{
+                                                height: 90%;
+                                                background-color: #1c64ff;
+                                            }
+                                            .box-short{
+                                                padding-top: 10px;
+                                                height: 10%;
+                                            }
+                                        }
+                                        .bar-4{
+                                            height: 100%;
+                                            .box-long{
+                                                height: 60%;
+                                                background-color: #985fe8;
+                                            }
+                                            .box-short{
+                                                padding-top: 10px;
+                                                height: 10%;
+                                            }
+                                        }
+                                        .bar-5{
+                                            height: 100%;
+                                            .box-long{
+                                                height: 73%;
+                                                background-color: #c499ff;
+                                            }
+                                            .box-short{
+                                                padding-top: 10px;
+                                                height: 10%;
+                                            }
+                                        }
+                                        .bar-6{
+                                            height: 100%;
+                                            .box-long{
+                                                height: 50%;
+                                                background-color: #ffd09e;
+                                            }
+                                            .box-short{
+                                                padding-top: 10px;
+                                                height: 10%;
+                                            }
+                                        }
+                                        .bar-7{
+                                            height: 100%;
+                                            .box-long{
+                                                height: 68%;
+                                                background-color: aliceblue;
+                                            }
+                                            .box-short{
+                                                padding-top: 10px;
+                                                height: 10%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .bottom-header{
+                    display: flex;
+                    width: 100%;
+                    height: 55%;
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                    .container-bottom{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        width: 100%;
+                        height: 100%;
+                        gap: 50px;
+                        .left-product{
+                            width: 80%;
+                            .top{
+                                display: flex;
+                                align-items: center;
+                                width: 100%;
+                                height: 50px;
+                                margin-bottom: 30px;
+                                .box-1{
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    align-items: center;
+                                    width: 50%;
+                                    gap: 20px;
+                                    .green-box{
+                                        width: 20px;
+                                        height: 45px;
+                                        background-color: greenyellow;
+                                        border-radius: 1vh;
+                                    }
+                                    .title-box{
+                                        width: 100%;
+                                        font-size: 0.9rem;
+                                    }
+                                }
+                                .box-2{
+                                    display: flex;
+                                    justify-content: flex-end;
+                                    width: 50%;
+                                    gap: 10px;
+                                    select{
+                                        border-radius: 2vh;
+                                        width: 150px;
+                                        height: 45px;
+                                    }
+                                    button{
+                                        border: none;
+                                        border-radius: 2vh;
+                                        background-color: dodgerblue;
+                                        color: white;
+                                        width: 100px;
+                                        height: 45px;
+                                        &:hover{
+                                            background-color: white;
+                                            color: black;
+                                            border: 2px solid grey;
+                                        }
+                                    }
+                                }
+                            }
+                            .bottom{
+                                width: 100%;
+                                padding-top: 5px;
+                                overflow: auto;
+                                .card{
+                                    display: flex;
+                                    width: 100%;
+                                    gap: 20px;
+                                    .card-1{
+                                        &:hover {
+                                            border: 1px solid gray;
+                                            border-radius: 2vh;
+                                            }
+                                        height: 100%;
+                                        .product{
+                                            align-items: center;
+                                            padding: 20px 15px 0 0;
+                                            height: 200px;
+                                            border-radius: 2vh;
+                                            background-color: #55faa2;
+                                            img{
+                                                width: 200px;
+                                                rotate: -25deg;
+                                                filter: drop-shadow(6px 6px 5px #232323);
+                                            }
+                                        }
+                                        .description{
+                                            display: flex;
+                                            flex-direction: column;
+                                            padding-top: 20px;
+                                            height: 100px;
+                                            .text{
+                                                display: flex;
+                                                flex-direction: column;
+                                                gap: 5px;
+                                                h1{
+                                                    font-size: 1rem;
+                                                }
+                                                span{
+                                                    font-size: 0.8rem;
+                                                    color: orange;
+                                                    &:nth-child(2){
+                                                        color: black;
+                                                    }
+                                                }
+                                            }
+                                            .attribute{
+                                                margin-top: 20px;
+                                                display: flex;
+                                                align-items: center;
+                                                width: 100%;
+                                                .colors{
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    padding: 2px;
+                                                    font-size: 0.9rem;
+                                                    color: blue;
+                                                    background-color: lightcyan;
+                                                    border-radius: 2vh;
+                                                    width: 40%;
+                                                }
+                                                .color-sample{
+                                                    display: flex;
+                                                    justify-content: flex-end;
+                                                    width: 60%;
+                                                    gap: 5px;
+                                                    .color-1{
+                                                        width: 10px;
+                                                        height: 10px;
+                                                        background-color: black;
+                                                        border-radius: 50%;
+                                                    }
+                                                    .color-2{
+                                                        width: 10px;
+                                                        height: 10px;
+                                                        background-color: red;
+                                                        border-radius: 50%;
+                                                    }
+                                                    .color-3{
+                                                        width: 10px;
+                                                        height: 10px;
+                                                        background-color: orange;
+                                                        border-radius: 50%;
+                                                    }
+                                                    .color-4{
+                                                        width: 10px;
+                                                        height: 10px;
+                                                        background-color: yellow;
+                                                        
+                                                    }
+                                                    h1{
+                                                        width: 20%;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .card-2{
+                                        &:hover {
+                                            border: 1px solid gray;
+                                            border-radius: 2vh;
+                                            }
+                                        height: 100%;
+                                        .product{
+                                            align-items: center;
+                                            height: 200px;
+                                            padding: 20px 15px 0 0;
+                                            border-radius: 2vh;
+                                            background-color: #ffbdee;
+                                            position: relative;
+                                            img{
+                                                width: 200px;
+                                                rotate: -25deg;
+                                                filter: drop-shadow(6px 6px 5px #232323);
+                                            }
+                                            .pop-up{
+                                                display: flex;
+                                                justify-content: center;
+                                                color: white;
+                                                background-color: #1c64ff;
+                                                width: 50px;
+                                                padding: 4px;
+                                                font-size: 0.5rem;
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                border-radius: 2vh 0 2vh 0;
+                                            }
+                                        }
+                                        .description{
+                                            display: flex;
+                                            flex-direction: column;
+                                            padding-top: 20px;
+                                            height: 100px;
+                                            .text{
+                                                display: flex;
+                                                flex-direction: column;
+                                                gap: 5px;
+                                                h1{
+                                                    font-size: 1rem;
+                                                }
+                                                span{
+                                                    font-size: 0.8rem;
+                                                    color: orange;
+                                                    &:nth-child(2){
+                                                        color: black;
+                                                    }
+                                                }
+                                            }
+                                            .attribute{
+                                                margin-top: 20px;
+                                                display: flex;
+                                                align-items: center;
+                                                width: 100%;
+                                                .colors{
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    padding: 2px;
+                                                    font-size: 0.9rem;
+                                                    color: blue;
+                                                    background-color: lightcyan;
+                                                    border-radius: 2vh;
+                                                    width: 40%;
+                                                }
+                                                .color-sample{
+                                                    display: flex;
+                                                    justify-content: flex-end;
+                                                    width: 60%;
+                                                    gap: 5px;
+                                                    .color-1{
+                                                        width: 10px;
+                                                        height: 10px;
+                                                        background-color: black;
+                                                        border-radius: 50%;
+                                                    }
+                                                    .color-2{
+                                                        width: 10px;
+                                                        height: 10px;
+                                                        background-color: red;
+                                                        border-radius: 50%;
+                                                    }
+                                                    .color-3{
+                                                        width: 10px;
+                                                        height: 10px;
+                                                        background-color: orange;
+                                                        border-radius: 50%;
+                                                    }
+                                                    .color-4{
+                                                        width: 10px;
+                                                        height: 10px;
+                                                        background-color: yellow;
+                                                        border-radius: 50%;
+                                                    }
+                                                    h1{
+                                                        width: 20%;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .card-3{
+                                        &:hover {
+                                            border: 1px solid gray;
+                                            border-radius: 2vh;
+                                            }
+                                        height: 100%;
+                                        .product{
+                                            align-items: center;
+                                            height: 200px;
+                                            padding: 20px 15px 0 0;
+                                            border-radius: 2vh;
+                                            background-color: #9661ff;
+                                            position: relative;
+                                            img{
+                                                margin-top: 20px;
+                                                width: 200px;
+                                                rotate: -25deg;
+                                                filter: drop-shadow(6px 6px 5px #232323);
+                                            }
+                                            .pop-up{
+                                                display: flex;
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                .new{
+                                                display: flex;
+                                                justify-content: center;
+                                                color: white;
+                                                background-color: orange;
+                                                width: 50px;
+                                                padding: 4px;
+                                                font-size: 0.5rem;
+                                                border-radius: 2vh 0 0 0;
+                                                }
+                                                .hot{
+                                                display: flex;
+                                                justify-content: center;
+                                                color: white;
+                                                background-color: #1c64ff;
+                                                width: 50px;
+                                                padding: 4px;
+                                                font-size: 0.5rem;
+                                                border-radius: 0 0 2vh 0;
+                                                }
+                                            }
+                                        }
+                                        .description{
+                                            display: flex;
+                                            flex-direction: column;
+                                            padding-top: 20px;
+                                            height: 100px;
+                                            .text{
+                                                display: flex;
+                                                flex-direction: column;
+                                                gap: 5px;
+                                                h1{
+                                                    font-size: 1rem;
+                                                }
+                                                span{
+                                                    font-size: 0.8rem;
+                                                    color: orange;
+                                                    &:nth-child(2){
+                                                        color: black;
+                                                    }
+                                                }
+                                            }
+                                            .attribute{
+                                                margin-top: 20px;
+                                                display: flex;
+                                                align-items: center;
+                                                width: 100%;
+                                                .colors{
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    padding: 2px;
+                                                    font-size: 0.9rem;
+                                                    color: blue;
+                                                    background-color: lightcyan;
+                                                    border-radius: 2vh;
+                                                    width: 40%;
+                                                }
+                                                .color-sample{
+                                                    display: flex;
+                                                    justify-content: flex-end;
+                                                    width: 60%;
+                                                    gap: 5px;
+                                                    .color-1{
+                                                        width: 10px;
+                                                        height: 10px;
+                                                        background-color: black;
+                                                    }
+                                                    .color-2{
+                                                        width: 10px;
+                                                        height: 10px;
+                                                        background-color: red;
+                                                    }
+                                                    .color-3{
+                                                        width: 10px;
+                                                        height: 10px;
+                                                        background-color: orange;
+                                                    }
+                                                    .color-4{
+                                                        width: 10px;
+                                                        height: 10px;
+                                                        background-color: yellow;
+                                                    }
+                                                    h1{
+                                                        width: 20%;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .card-4{
+                                        &:hover {
+                                            border: 1px solid gray;
+                                            border-radius: 2vh;
+                                            }
+                                        height: 100%;
+                                        .product{
+                                            align-items: center;
+                                            padding: 20px 15px 0 0;
+                                            height: 200px;
+                                            border-radius: 2vh;
+                                            background-color: #47f0ff;
+                                            img{
+                                                width: 200px;
+                                                rotate: -25deg;
+                                                filter: drop-shadow(6px 6px 5px #232323);
+                                            }
+                                        }
+                                        .description{
+                                            display: flex;
+                                            flex-direction: column;
+                                            padding-top: 20px;
+                                            height: 100px;
+                                            .text{
+                                                display: flex;
+                                                flex-direction: column;
+                                                gap: 5px;
+                                                h1{
+                                                    font-size: 1rem;
+                                                }
+                                                span{
+                                                    font-size: 0.8rem;
+                                                    color: orange;
+                                                    &:nth-child(2){
+                                                        color: black;
+                                                    }
+                                                }
+                                            }
+                                            .attribute{
+                                                margin-top: 20px;
+                                                display: flex;
+                                                align-items: center;
+                                                width: 100%;
+                                                .colors{
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    padding: 2px;
+                                                    font-size: 0.9rem;
+                                                    color: blue;
+                                                    background-color: lightcyan;
+                                                    border-radius: 2vh;
+                                                    width: 40%;
+                                                }
+                                                .color-sample{
+                                                    display: flex;
+                                                    justify-content: flex-end;
+                                                    width: 60%;
+                                                    gap: 5px;
+                                                    .color-1{
+                                                        width: 10px;
+                                                        height: 10px;
+                                                        background-color: black;
+                                                        border-radius: 50%;
+                                                    }
+                                                    .color-2{
+                                                        width: 10px;
+                                                        height: 10px;
+                                                        background-color: red;
+                                                        border-radius: 50%;
+                                                    }
+                                                    .color-3{
+                                                        width: 10px;
+                                                        height: 10px;
+                                                        background-color: orange;
+                                                        border-radius: 50%;
+                                                    }
+                                                    .color-4{
+                                                        width: 10px;
+                                                        height: 10px;
+                                                        background-color: yellow;
+                                                        
+                                                    }
+                                                    h1{
+                                                        width: 20%;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .card-5{
+                                        &:hover {
+                                            border: 1px solid gray;
+                                            border-radius: 2vh;
+                                            }
+                                        height: 100%;
+                                        .product{
+                                            align-items: center;
+                                            padding: 20px 15px 0 0;
+                                            height: 200px;
+                                            border-radius: 2vh;
+                                            background-color: #55faa2;
+                                            img{
+                                                width: 200px;
+                                                rotate: -25deg;
+                                                filter: drop-shadow(6px 6px 5px #232323);
+                                            }
+                                        }
+                                        .description{
+                                            display: flex;
+                                            flex-direction: column;
+                                            padding-top: 20px;
+                                            height: 100px;
+                                            .text{
+                                                display: flex;
+                                                flex-direction: column;
+                                                gap: 5px;
+                                                h1{
+                                                    font-size: 1rem;
+                                                }
+                                                span{
+                                                    font-size: 0.8rem;
+                                                    color: orange;
+                                                    &:nth-child(2){
+                                                        color: black;
+                                                    }
+                                                }
+                                            }
+                                            .attribute{
+                                                margin-top: 20px;
+                                                display: flex;
+                                                align-items: center;
+                                                width: 100%;
+                                                .colors{
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    padding: 2px;
+                                                    font-size: 0.9rem;
+                                                    color: blue;
+                                                    background-color: lightcyan;
+                                                    border-radius: 2vh;
+                                                    width: 40%;
+                                                }
+                                                .color-sample{
+                                                    display: flex;
+                                                    justify-content: flex-end;
+                                                    width: 60%;
+                                                    gap: 5px;
+                                                    .color-1{
+                                                        width: 10px;
+                                                        height: 10px;
+                                                        background-color: black;
+                                                        border-radius: 50%;
+                                                    }
+                                                    .color-2{
+                                                        width: 10px;
+                                                        height: 10px;
+                                                        background-color: red;
+                                                        border-radius: 50%;
+                                                    }
+                                                    .color-3{
+                                                        width: 10px;
+                                                        height: 10px;
+                                                        background-color: orange;
+                                                        border-radius: 50%;
+                                                    }
+                                                    .color-4{
+                                                        width: 10px;
+                                                        height: 10px;
+                                                        background-color: yellow;
+                                                        
+                                                    }
+                                                    h1{
+                                                        width: 20%;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .card-6{
+                                        &:hover {
+                                            border: 1px solid gray;
+                                            border-radius: 2vh;
+                                            }
+                                        height: 100%;
+                                        .product{
+                                            align-items: center;
+                                            height: 200px;
+                                            padding: 20px 15px 0 0;
+                                            border-radius: 2vh;
+                                            background-color: #ffbdee;
+                                            position: relative;
+                                            img{
+                                                width: 200px;
+                                                rotate: -25deg;
+                                                filter: drop-shadow(6px 6px 5px #232323);
+                                            }
+                                            .pop-up{
+                                                display: flex;
+                                                justify-content: center;
+                                                color: white;
+                                                background-color: #1c64ff;
+                                                width: 50px;
+                                                padding: 4px;
+                                                font-size: 0.5rem;
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                border-radius: 2vh 0 2vh 0;
+                                            }
+                                        }
+                                        .description{
+                                            display: flex;
+                                            flex-direction: column;
+                                            padding-top: 20px;
+                                            height: 100px;
+                                            .text{
+                                                display: flex;
+                                                flex-direction: column;
+                                                gap: 5px;
+                                                h1{
+                                                    font-size: 1rem;
+                                                }
+                                                span{
+                                                    font-size: 0.8rem;
+                                                    color: orange;
+                                                    &:nth-child(2){
+                                                        color: black;
+                                                    }
+                                                }
+                                            }
+                                            .attribute{
+                                                margin-top: 20px;
+                                                display: flex;
+                                                align-items: center;
+                                                width: 100%;
+                                                .colors{
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    padding: 2px;
+                                                    font-size: 0.9rem;
+                                                    color: blue;
+                                                    background-color: lightcyan;
+                                                    border-radius: 2vh;
+                                                    width: 40%;
+                                                }
+                                                .color-sample{
+                                                    display: flex;
+                                                    justify-content: flex-end;
+                                                    width: 60%;
+                                                    gap: 5px;
+                                                    .color-1{
+                                                        width: 10px;
+                                                        height: 10px;
+                                                        background-color: black;
+                                                        border-radius: 50%;
+                                                    }
+                                                    .color-2{
+                                                        width: 10px;
+                                                        height: 10px;
+                                                        background-color: red;
+                                                        border-radius: 50%;
+                                                    }
+                                                    .color-3{
+                                                        width: 10px;
+                                                        height: 10px;
+                                                        background-color: orange;
+                                                        border-radius: 50%;
+                                                    }
+                                                    .color-4{
+                                                        width: 10px;
+                                                        height: 10px;
+                                                        background-color: yellow;
+                                                        border-radius: 50%;
+                                                    }
+                                                    h1{
+                                                        width: 20%;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .card-7{
+                                        &:hover {
+                                            border: 1px solid gray;
+                                            border-radius: 2vh;
+                                            }
+                                        height: 100%;
+                                        .product{
+                                            align-items: center;
+                                            height: 200px;
+                                            padding: 20px 15px 0 0;
+                                            border-radius: 2vh;
+                                            background-color: #9661ff;
+                                            position: relative;
+                                            img{
+                                                margin-top: 20px;
+                                                width: 200px;
+                                                rotate: -25deg;
+                                                filter: drop-shadow(6px 6px 5px #232323);
+                                            }
+                                            .pop-up{
+                                                display: flex;
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                .new{
+                                                display: flex;
+                                                justify-content: center;
+                                                color: white;
+                                                background-color: orange;
+                                                width: 50px;
+                                                padding: 4px;
+                                                font-size: 0.5rem;
+                                                border-radius: 2vh 0 0 0;
+                                                }
+                                                .hot{
+                                                display: flex;
+                                                justify-content: center;
+                                                color: white;
+                                                background-color: #1c64ff;
+                                                width: 50px;
+                                                padding: 4px;
+                                                font-size: 0.5rem;
+                                                border-radius: 0 0 2vh 0;
+                                                }
+                                            }
+                                        }
+                                        .description{
+                                            display: flex;
+                                            flex-direction: column;
+                                            padding-top: 20px;
+                                            height: 100px;
+                                            .text{
+                                                display: flex;
+                                                flex-direction: column;
+                                                gap: 5px;
+                                                h1{
+                                                    font-size: 1rem;
+                                                }
+                                                span{
+                                                    font-size: 0.8rem;
+                                                    color: orange;
+                                                    &:nth-child(2){
+                                                        color: black;
+                                                    }
+                                                }
+                                            }
+                                            .attribute{
+                                                margin-top: 20px;
+                                                display: flex;
+                                                align-items: center;
+                                                width: 100%;
+                                                .colors{
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    padding: 2px;
+                                                    font-size: 0.9rem;
+                                                    color: blue;
+                                                    background-color: lightcyan;
+                                                    border-radius: 2vh;
+                                                    width: 40%;
+                                                }
+                                                .color-sample{
+                                                    display: flex;
+                                                    justify-content: flex-end;
+                                                    width: 60%;
+                                                    gap: 5px;
+                                                    .color-1{
+                                                        width: 10px;
+                                                        height: 10px;
+                                                        background-color: black;
+                                                    }
+                                                    .color-2{
+                                                        width: 10px;
+                                                        height: 10px;
+                                                        background-color: red;
+                                                    }
+                                                    .color-3{
+                                                        width: 10px;
+                                                        height: 10px;
+                                                        background-color: orange;
+                                                    }
+                                                    .color-4{
+                                                        width: 10px;
+                                                        height: 10px;
+                                                        background-color: yellow;
+                                                    }
+                                                    h1{
+                                                        width: 20%;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .right-description{
+                            display: flex;
+                            flex-direction: column;
+                            width: 20%;
+                            .icon-profile-1{
+                                display: flex;
+                                justify-content: center;
+                                flex-direction: column;
+                                gap: 10px;
+                                width: 100%;
+                                height: 50%;
+                                ul{
+                                    i{
+                                        font-size: 1.5rem;
+                                        background-color: rgb(144, 255, 164);
+                                        border-radius: 50%;
+                                        padding: 15px;
+                                    }
+                                }
+                                .product-reached{
+                                    display: flex;
+                                    font-size: 0.7rem;
+                                    span{
+                                        i{
+                                            margin-left: 10px;
+                                        }
+                                    }
+                                }
+                                .product-rate{
+                                    font-size: 1.5rem;
+                                }
+                                .product-activity{
+                                    display: flex;
+                                    font-size: 0.7rem;
+                                    gap: 5px;
+                                    .icon-activity{
+                                        color: #22b868;
+                                    }
+                                }
+                            }
+                            .icon-profile-2{
+                                display: flex;
+                                justify-content: flex-start;
+                                flex-direction: column;
+                                gap: 10px;
+                                height: 50%;
+                                ul{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 53px;
+                                    height: 53px;
+                                    border-radius: 50%;
+                                    background-color: #d7bbff;
+                                    i{
+                                        font-size: 1.5rem;
+                                    }
+                                }
+                                .engagement{
+                                    display: flex;
+                                    font-size: 0.7rem;
+                                    span{
+                                        i{
+                                            margin-left: 10px;
+                                        }
+                                    }
+                                }
+                                .product-evolve{
+                                    font-size: 1.5rem;
+                                }
+                                .product-activity{
+                                    display: flex;
+                                    font-size: 0.7rem;
+                                    gap: 5px;
+                                    .icon-activity{
+                                        color: #22b868;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
