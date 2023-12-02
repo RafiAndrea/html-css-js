@@ -34,6 +34,7 @@ section#root{
     width: 100%;
     gap: 20px;
     padding: 20px 50px;
+    font-family: $font-poppins;
     nav{
         display: flex;
         justify-content: space-between;
@@ -98,7 +99,7 @@ section#root{
                 gap: 2px;
                 border: 1px solid white;
                 color: white;
-                border-radius: 3vh;
+                border-radius: 3.5vh;
                 flex-grow: 2;
                 .portfolio{
                     display: flex;
@@ -107,7 +108,7 @@ section#root{
                     padding: 5px;
                     gap: 5px;
                     border: 1px solid white;
-                    border-radius: 3vh;
+                    border-radius: 3.1vh;
                     flex-grow: 1;
                     &:hover{
                         background-color: white;
@@ -119,7 +120,7 @@ section#root{
                         align-items: center;
                         padding: 5px 15px;
                         background-color: gold;
-                        border-radius: 3vh;
+                        border-radius: 2vh;
                         color: black;
                     }
                 }
@@ -130,7 +131,7 @@ section#root{
                     padding: 5px;
                     gap: 5px;
                     border: 1px solid white;
-                    border-radius: 3vh;
+                    border-radius: 3.1vh;
                     flex-grow: 1;
                     &:hover{
                         background-color: white;
@@ -202,7 +203,6 @@ section#root{
         justify-content: center;
         flex-direction: column;
         width: 100%;
-        font-family: $font-poppins;
         .wrapper{
             @media screen and (min-width: $media-sm){
                 flex-direction: row;
@@ -226,7 +226,7 @@ section#root{
                         font-size: 5rem;
                     }
                     @media screen and (min-width: $media-sm) and (max-width: $media-lg){
-                        font-size: 3rem;
+                        font-size: 3.5rem;
                     }
                     font-size: 2rem;
                     display: flex;
@@ -312,8 +312,9 @@ section#root{
         .text-description{
             display: flex;
             width: 100%;
-            padding: 10px 0px;
+            padding: 18px 0px 8px;
             color: white;
+            gap: 10px;
             font-size: 0.9rem;
             flex-direction: column;
             @media screen and (min-width: $media-lg){
@@ -344,6 +345,129 @@ section#root{
                 width: 100%;
                 display: flex;
                 align-items: center;
+            }
+        }
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .card-list{
+            @media screen and (min-width: $media-lg){
+                flex-direction: row;
+                gap: 10px;
+            }
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            gap: 10px;
+            color: white;
+            flex-grow: 1;
+            .card{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 25px;
+                gap: 10px;
+                border: 1.5px solid gray;
+                border-radius: 4vh;
+                flex-grow: 1;
+                font-size: 0.9rem;
+                .head{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    h3{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 0.9rem;
+                        padding: 2px 5px;
+                        border-radius: 3.5vh;
+                        border: 1.5px solid white;
+                    }
+                    i{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 25px;
+                        height: 25px;
+                        padding: 2px;
+                        color: black;
+                        background-color: white;
+                        border-radius: 50%;
+                    }
+                }
+                .body{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 100%;
+                    gap: 10px;
+                    border-bottom: 1.5px solid gray;
+                    padding-bottom: 10px;
+                    img{
+                        width: 100%;
+                    }
+                    ul{
+                        display: flex;
+                        justify-content: space-between;
+                        list-style-type: none;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        gap: 10px;
+        font-size: 0.9rem;
+        .top-line{
+            padding: 2px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .bottom-line{
+            @media screen and (min-width: $media-lg){
+                flex-direction: row;
+            }
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            .left{
+                @media screen and (min-width: $media-lg){
+                    display: flex;
+                    justify-content: space-between;
+                }
+                display: flex;
+                justify-content: space-between;
+                flex-grow: 1;
+            }
+            .mid{
+                @media screen and (min-width: $media-lg){
+                    display: flex;
+                }
+                display: none;
+                justify-content: flex-end;
+                gap: 20px;
+                flex-grow: 1;
+
+            }
+            .right{
+                @media screen and (min-width: $media-lg){
+                    display: flex;
+                }
+                display: flex;
+                justify-content: flex-end;
+                gap: 10px;
+                margin-left: 30px;
             }
         }
     }

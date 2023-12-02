@@ -21,6 +21,7 @@ section#root {
   width: 100%;
   gap: 20px;
   padding: 20px 50px;
+  font-family: "Poppins", sans-serif;
 }
 section#root nav {
   display: flex;
@@ -86,7 +87,7 @@ section#root nav .left-side .right-nav {
   gap: 2px;
   border: 1px solid white;
   color: white;
-  border-radius: 3vh;
+  border-radius: 3.5vh;
   flex-grow: 2;
 }
 @media screen and (min-width: 1024px) {
@@ -102,7 +103,7 @@ section#root nav .left-side .right-nav .portfolio {
   padding: 5px;
   gap: 5px;
   border: 1px solid white;
-  border-radius: 3vh;
+  border-radius: 3.1vh;
   flex-grow: 1;
 }
 section#root nav .left-side .right-nav .portfolio:hover {
@@ -115,7 +116,7 @@ section#root nav .left-side .right-nav .portfolio p {
   align-items: center;
   padding: 5px 15px;
   background-color: gold;
-  border-radius: 3vh;
+  border-radius: 2vh;
   color: black;
 }
 section#root nav .left-side .right-nav .category {
@@ -125,7 +126,7 @@ section#root nav .left-side .right-nav .category {
   padding: 5px;
   gap: 5px;
   border: 1px solid white;
-  border-radius: 3vh;
+  border-radius: 3.1vh;
   flex-grow: 1;
 }
 section#root nav .left-side .right-nav .category:hover {
@@ -198,7 +199,6 @@ section#root header {
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  font-family: "Poppins", sans-serif;
 }
 section#root header .wrapper {
   display: flex;
@@ -235,7 +235,7 @@ section#root header .wrapper .left-side h1 {
 }
 @media screen and (min-width: 640px) and (max-width: 1024px) {
   section#root header .wrapper .left-side h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 }
 section#root header .wrapper .left-side h1::after {
@@ -323,8 +323,9 @@ section#root header .wrapper .right-side ul li p {
 section#root header .text-description {
   display: flex;
   width: 100%;
-  padding: 10px 0px;
+  padding: 18px 0px 8px;
   color: white;
+  gap: 10px;
   font-size: 0.9rem;
   flex-direction: column;
 }
@@ -361,6 +362,138 @@ section#root header .text-description .right {
 @media screen and (min-width: 1024px) {
   section#root header .text-description .right {
     width: 50%;
+  }
+}
+section#root main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+section#root main .card-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  color: white;
+  flex-grow: 1;
+}
+@media screen and (min-width: 1024px) {
+  section#root main .card-list {
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+section#root main .card-list .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  gap: 10px;
+  border: 1.5px solid gray;
+  border-radius: 4vh;
+  flex-grow: 1;
+  font-size: 0.9rem;
+}
+section#root main .card-list .card .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+section#root main .card-list .card .head h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  padding: 2px 5px;
+  border-radius: 3.5vh;
+  border: 1.5px solid white;
+}
+section#root main .card-list .card .head i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  padding: 2px;
+  color: black;
+  background-color: white;
+  border-radius: 50%;
+}
+section#root main .card-list .card .body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+  border-bottom: 1.5px solid gray;
+  padding-bottom: 10px;
+}
+section#root main .card-list .card .body img {
+  width: 100%;
+}
+section#root main .card-list .card .body ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+section#root footer {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+section#root footer .top-line {
+  padding: 2px;
+  display: flex;
+  justify-content: flex-end;
+}
+section#root footer .bottom-line {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  section#root footer .bottom-line {
+    flex-direction: row;
+  }
+}
+section#root footer .bottom-line .left {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+@media screen and (min-width: 1024px) {
+  section#root footer .bottom-line .left {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+section#root footer .bottom-line .mid {
+  display: none;
+  justify-content: flex-end;
+  gap: 20px;
+  flex-grow: 1;
+}
+@media screen and (min-width: 1024px) {
+  section#root footer .bottom-line .mid {
+    display: flex;
+  }
+}
+section#root footer .bottom-line .right {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-left: 30px;
+}
+@media screen and (min-width: 1024px) {
+  section#root footer .bottom-line .right {
+    display: flex;
   }
 }
 
