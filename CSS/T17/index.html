@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <!-- JS -->
+    <script src="./src/js/app.js"></script>
+    <title>Task 17</title>
+</head>
+<body>
+    <div id="root" class="flex flex-col w-full flex-col h-screen pt-[20px] pl-[20px] pr-[20px] gap-[20px] sm:p-[20px]">
+        <header class="flex w-full justify-between sm:hidden">
+            <div id="left" class="flex flex-col text-[1.3rem] w-1/2">
+                <span class="font-bold">Welcome Back!</span>
+                <span>Hi, Andrea</span>
+            </div>
+            <div id="right" class="flex justify-end items-center gap-[10px] w-1/2">
+                <div class="p-[2px] border-2 border-gray rounded-full relative">
+                    <i class="fa-regular fa-bell flex text-[1.8rem] justify-center items-center w-[40px] h-[40px] rounded-full"></i>
+                    <i class="fa-solid fa-circle absolute top-[10px] right-[10px] text-[0.5rem] text-red-700 border-2 border-white rounded-full"></i>
+                </div>
+                <span class="p-[2px] border-2 border-gray rounded-full"><img class="w-[40px] rounded-full" src="public/assets/image/mek.jpg" alt=""></span>
+            </div>
+        </header>
+        <nav id="navbar" class="flex w-full justify-between text-gray-400 rounded-[1.2vh] gap-2">
+            <div id="left" class="flex items-center w-full sm:w-1/2">
+                <div id="logo" class="hidden flex justify-center items-center w-[50px] h-[50px] mr-[20px] p-2 bg-red-600 rounded-[10px] p-2 sm:flex">
+                    <i class="fa-solid fa-gamepad flex justify-center items-center text-white w-[50px] h-[50px] text-[2rem]"></i>
+                </div>
+                <div id="search" class="flex justify-center items-center w-full ">
+                    <input type="text" placeholder="Brands, Product, Price, ..." class="flex w-full h-[50px] p-2 outline-none rounded-tl-[1.5vh] rounded-bl-[1.5vh] bg-gray-100">
+                    <i class="fa-solid fa-magnifying-glass flex justify-center items-center bg-gray-100 text-gray-400 h-[50px] w-[50px] rounded-br-[1.5vh] rounded-tr-[1.5vh]"></i>
+                </div>
+            </div>
+            <div id="right" class="flex justify-end items-center gap-[20px] sm:w-1/2">
+                <div id="action-list" class="hidden justify-center items-center text-black gap-[20px] sm:flex">
+                    <button class="items-center gap-1 hover:bg-red-600 hover:text-white p-2 rounded-[1vh]">
+                        <span class="text-[1.1rem]">Brands</span>
+                        <i class="fa-solid fa-chevron-down text-[0.7rem]"></i>
+                    </button>
+                    <button class="items-center gap-1 hover:bg-red-600 hover:text-white p-2 rounded-[1vh]">
+                        <span class="text-[1.1rem]">Product</span>
+                        <i class="fa-solid fa-chevron-down text-[0.7rem]"></i>
+                    </button>
+                    <button class="items-center hover:bg-red-600 hover:text-white p-2 rounded-[1vh]">
+                        <span class="text-[1.1rem]">About Us</span>
+                    </button>
+                    <button class="items-center hover:bg-red-600 hover:text-white p-2 rounded-[1vh]">
+                        <span class="text-[1.1rem]">More</span>
+                    </button>
+                </div>
+                <div id="menu" class="flex justify-center items-center w-[50px] h-[50px] p-2 bg-red-600 rounded-[10px]">
+                    <i class="fa-solid fa-bars-progress flex justify-center items-center text-white w-[50px] h-[50px] text-[2rem]"></i>
+                </div>
+            </div>
+        </nav>
+        <main class="flex flex-col w-full">
+            <div id="heading" class="flex justify-between items-center text-[1.3rem] mb-6 translate-y-4">
+                <span class="font-bold">Popular Product</span>
+                <span class="text-red-600">View all</span>
+            </div>
+            <div id="card" class="flex w-full gap-6 pt-[20px] pb-[50px] bg-white overflow-x-scroll">
+                <!-- CONTROLLER 1 -->
+                <div id="card-1" class="flex flex-col justify-center items-center w-[250px] h-auto p-4 gap-2 rounded-[1.2vh] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] relative hover:border-2 hover:border-gray-200">
+                    <div class="w-[220px] h-[200px]">
+                        <img src="public/assets/image/white-controller.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col w-full justify-start pt-2 text-[1.2rem]">
+                        <span class="font-bold">Solar Red Joystick</span>
+                        <span>Accessories</span>
+                    </div>
+                    <div class="flex w-full justify-between">
+                        <span class="flex text-[1.2rem] text-red-600 font-bold">$233<p class="flex translate-y-2 text-[0.9rem] text-black font-normal">/pcs</p></span>
+                        <span class="flex justify-center items-center w-[45px] h-[45px] -translate-y-4 bg-gray-500 text-white rounded-lg"><i class="fa-solid fa-cart-shopping text-[1.5rem]"></i></span>
+                    </div>
+                    <div id="icon" class="flex w-full justify-center items-center gap-3 absolute -bottom-[20px]">
+                        <span class="flex justify-center items-center w-[20px] h-[20px] bg-white text-[0.8rem] text-gray-500 rounded-full border-2 border-gray-200"><i class="fa-solid fa-xmark"></i></span>
+                        <span class="flex justify-center items-center w-[40px] h-[40px] bg-white text-[1.5rem] text-red-600 rounded-full border-4 border-gray-100"><i class="fa-solid fa-star"></i></span>
+                        <span class="flex justify-center items-center w-[20px] h-[20px] bg-white text-[0.8rem] text-gray-500 rounded-full border-2 border-gray-200"><i class="fa-solid fa-check"></i></span>
+                    </div>
+                </div>
+                <!-- CONTROLLER 2 -->
+                <div id="card-2" class="flex flex-col justify-center items-center w-[250px] h-auto p-3 gap-2 rounded-[1.2vh] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] relative hover:border-2 hover:border-gray-200">
+                    <div class="w-[220px] h-[200px]">
+                        <img src="public/assets/image/stik ps.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col w-full justify-start pt-2 text-[1.2rem]">
+                        <span class="font-bold">Solar Red Joystick</span>
+                        <span>Accessories</span>
+                    </div>
+                    <div class="flex w-full justify-between">
+                        <span class="flex text-[1.2rem] text-red-600 font-bold">$233<p class="flex translate-y-2 text-[0.9rem] text-black font-normal">/pcs</p></span>
+                        <span class="flex justify-center items-center w-[45px] h-[45px] -translate-y-4 bg-gray-500 text-white rounded-lg"><i class="fa-solid fa-cart-shopping text-[1.5rem]"></i></span>
+                    </div>
+                    <div id="icon" class="flex w-full justify-center items-center gap-3 absolute -bottom-[20px]">
+                        <span class="flex justify-center items-center w-[20px] h-[20px] bg-white text-[0.8rem] text-gray-500 rounded-full border-2 border-gray-200"><i class="fa-solid fa-xmark"></i></span>
+                        <span class="flex justify-center items-center w-[40px] h-[40px] bg-white text-[1.5rem] text-red-600 rounded-full border-4 border-gray-100"><i class="fa-solid fa-star"></i></span>
+                        <span class="flex justify-center items-center w-[20px] h-[20px] bg-white text-[0.8rem] text-gray-500 rounded-full border-2 border-gray-200"><i class="fa-solid fa-check"></i></span>
+                    </div>
+                </div>
+                <!-- CONTROLLER 3 -->
+                <div id="card-3" class="flex flex-col justify-center items-center w-[250px] h-auto p-3 gap-2 rounded-[1.2vh] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] relative hover:border-2 hover:border-gray-200">
+                    <div class="w-[220px] h-[200px]">
+                        <img src="public/assets/image/white-controller.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col w-full justify-start pt-2 text-[1.2rem]">
+                        <span class="font-bold">Solar Red Joystick</span>
+                        <span>Accessories</span>
+                    </div>
+                    <div class="flex w-full justify-between">
+                        <span class="flex text-[1.2rem] text-red-600 font-bold">$233<p class="flex translate-y-2 text-[0.9rem] text-black font-normal">/pcs</p></span>
+                        <span class="flex justify-center items-center w-[45px] h-[45px] -translate-y-4 bg-gray-500 text-white rounded-lg"><i class="fa-solid fa-cart-shopping text-[1.5rem]"></i></span>
+                    </div>
+                    <div id="icon" class="flex w-full justify-center items-center gap-3 absolute -bottom-[20px]">
+                        <span class="flex justify-center items-center w-[20px] h-[20px] bg-white text-[0.8rem] text-gray-500 rounded-full border-2 border-gray-200"><i class="fa-solid fa-xmark"></i></span>
+                        <span class="flex justify-center items-center w-[40px] h-[40px] bg-white text-[1.5rem] text-red-600 rounded-full border-4 border-gray-100"><i class="fa-solid fa-star"></i></span>
+                        <span class="flex justify-center items-center w-[20px] h-[20px] bg-white text-[0.8rem] text-gray-500 rounded-full border-2 border-gray-200"><i class="fa-solid fa-check"></i></span>
+                    </div>
+                </div>
+                <!-- CONTROLLER 4 -->
+                <div id="card-4" class="flex flex-col justify-center items-center w-[250px] h-auto p-3 gap-2 rounded-[1.2vh] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] relative hover:border-2 hover:border-gray-200">
+                    <div class="w-[220px] h-[200px]">
+                        <img src="public/assets/image/stik ps.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col w-full justify-start pt-2 text-[1.2rem]">
+                        <span class="font-bold">Solar Red Joystick</span>
+                        <span>Accessories</span>
+                    </div>
+                    <div class="flex w-full justify-between">
+                        <span class="flex text-[1.2rem] text-red-600 font-bold">$233<p class="flex translate-y-2 text-[0.9rem] text-black font-normal">/pcs</p></span>
+                        <span class="flex justify-center items-center w-[45px] h-[45px] -translate-y-4 bg-gray-500 text-white rounded-lg"><i class="fa-solid fa-cart-shopping text-[1.5rem]"></i></span>
+                    </div>
+                    <div id="icon" class="flex w-full justify-center items-center gap-3 absolute -bottom-[20px]">
+                        <span class="flex justify-center items-center w-[20px] h-[20px] bg-white text-[0.8rem] text-gray-500 rounded-full border-2 border-gray-200"><i class="fa-solid fa-xmark"></i></span>
+                        <span class="flex justify-center items-center w-[40px] h-[40px] bg-white text-[1.5rem] text-red-600 rounded-full border-4 border-gray-100"><i class="fa-solid fa-star"></i></span>
+                        <span class="flex justify-center items-center w-[20px] h-[20px] bg-white text-[0.8rem] text-gray-500 rounded-full border-2 border-gray-200"><i class="fa-solid fa-check"></i></span>
+                    </div>
+                </div>
+                <!-- CONTROLLER 5 -->
+                <div id="card-4" class="flex flex-col justify-center items-center w-[250px] h-auto p-3 gap-2 rounded-[1.2vh] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] relative hover:border-2 hover:border-gray-200">
+                    <div class="w-[220px] h-[200px]">
+                        <img src="public/assets/image/white-controller.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col w-full justify-start pt-2 text-[1.2rem]">
+                        <span class="font-bold">Solar Red Joystick</span>
+                        <span>Accessories</span>
+                    </div>
+                    <div class="flex w-full justify-between">
+                        <span class="flex text-[1.2rem] text-red-600 font-bold">$233<p class="flex translate-y-2 text-[0.9rem] text-black font-normal">/pcs</p></span>
+                        <span class="flex justify-center items-center w-[45px] h-[45px] -translate-y-4 bg-gray-500 text-white rounded-lg"><i class="fa-solid fa-cart-shopping text-[1.5rem]"></i></span>
+                    </div>
+                    <div id="icon" class="flex w-full justify-center items-center gap-3 absolute -bottom-[20px]">
+                        <span class="flex justify-center items-center w-[20px] h-[20px] bg-white text-[0.8rem] text-gray-500 rounded-full border-2 border-gray-200"><i class="fa-solid fa-xmark"></i></span>
+                        <span class="flex justify-center items-center w-[40px] h-[40px] bg-white text-[1.5rem] text-red-600 rounded-full border-4 border-gray-100"><i class="fa-solid fa-star"></i></span>
+                        <span class="flex justify-center items-center w-[20px] h-[20px] bg-white text-[0.8rem] text-gray-500 rounded-full border-2 border-gray-200"><i class="fa-solid fa-check"></i></span>
+                    </div>
+                </div>
+                <!-- CONTROLLER 6 -->
+                <div id="card-4" class="flex flex-col justify-center items-center w-[250px] h-auto p-3 gap-2 rounded-[1.2vh] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] relative hover:border-2 hover:border-gray-200">
+                    <div class="w-[220px] h-[200px]">
+                        <img src="public/assets/image/stik ps.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col w-full justify-start pt-2 text-[1.2rem]">
+                        <span class="font-bold">Solar Red Joystick</span>
+                        <span>Accessories</span>
+                    </div>
+                    <div class="flex w-full justify-between">
+                        <span class="flex text-[1.2rem] text-red-600 font-bold">$233<p class="flex translate-y-2 text-[0.9rem] text-black font-normal">/pcs</p></span>
+                        <span class="flex justify-center items-center w-[45px] h-[45px] -translate-y-4 bg-gray-500 text-white rounded-lg"><i class="fa-solid fa-cart-shopping text-[1.5rem]"></i></span>
+                    </div>
+                    <div id="icon" class="flex w-full justify-center items-center gap-3 absolute -bottom-[20px]">
+                        <span class="flex justify-center items-center w-[20px] h-[20px] bg-white text-[0.8rem] text-gray-500 rounded-full border-2 border-gray-200"><i class="fa-solid fa-xmark"></i></span>
+                        <span class="flex justify-center items-center w-[40px] h-[40px] bg-white text-[1.5rem] text-red-600 rounded-full border-4 border-gray-100"><i class="fa-solid fa-star"></i></span>
+                        <span class="flex justify-center items-center w-[20px] h-[20px] bg-white text-[0.8rem] text-gray-500 rounded-full border-2 border-gray-200"><i class="fa-solid fa-check"></i></span>
+                    </div>
+                </div>
+                <!-- CONTROLLER 7 -->
+                <div id="card-4" class="flex flex-col justify-center items-center w-[250px] h-auto p-3 gap-2 rounded-[1.2vh] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] relative hover:border-2 hover:border-gray-200">
+                    <div class="w-[220px] h-[200px]">
+                        <img src="public/assets/image/white-controller.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col w-full justify-start pt-2 text-[1.2rem]">
+                        <span class="font-bold">Solar Red Joystick</span>
+                        <span>Accessories</span>
+                    </div>
+                    <div class="flex w-full justify-between">
+                        <span class="flex text-[1.2rem] text-red-600 font-bold">$233<p class="flex translate-y-2 text-[0.9rem] text-black font-normal">/pcs</p></span>
+                        <span class="flex justify-center items-center w-[45px] h-[45px] -translate-y-4 bg-gray-500 text-white rounded-lg"><i class="fa-solid fa-cart-shopping text-[1.5rem]"></i></span>
+                    </div>
+                    <div id="icon" class="flex w-full justify-center items-center gap-3 absolute -bottom-[20px]">
+                        <span class="flex justify-center items-center w-[20px] h-[20px] bg-white text-[0.8rem] text-gray-500 rounded-full border-2 border-gray-200"><i class="fa-solid fa-xmark"></i></span>
+                        <span class="flex justify-center items-center w-[40px] h-[40px] bg-white text-[1.5rem] text-red-600 rounded-full border-4 border-gray-100"><i class="fa-solid fa-star"></i></span>
+                        <span class="flex justify-center items-center w-[20px] h-[20px] bg-white text-[0.8rem] text-gray-500 rounded-full border-2 border-gray-200"><i class="fa-solid fa-check"></i></span>
+                    </div>
+                </div>
+                <!-- CONTROLLER 8 -->
+                <div id="card-4" class="flex flex-col justify-center items-center w-[250px] h-auto p-3 gap-2 rounded-[1.2vh] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] relative hover:border-2 hover:border-gray-200">
+                    <div class="w-[220px] h-[200px]">
+                        <img src="public/assets/image/stik ps.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col w-full justify-start pt-2 text-[1.2rem]">
+                        <span class="font-bold">Solar Red Joystick</span>
+                        <span>Accessories</span>
+                    </div>
+                    <div class="flex w-full justify-between">
+                        <span class="flex text-[1.2rem] text-red-600 font-bold">$233<p class="flex translate-y-2 text-[0.9rem] text-black font-normal">/pcs</p></span>
+                        <span class="flex justify-center items-center w-[45px] h-[45px] -translate-y-4 bg-gray-500 text-white rounded-lg"><i class="fa-solid fa-cart-shopping text-[1.5rem]"></i></span>
+                    </div>
+                    <div id="icon" class="flex w-full justify-center items-center gap-3 absolute -bottom-[20px]">
+                        <span class="flex justify-center items-center w-[20px] h-[20px] bg-white text-[0.8rem] text-gray-500 rounded-full border-2 border-gray-200"><i class="fa-solid fa-xmark"></i></span>
+                        <span class="flex justify-center items-center w-[40px] h-[40px] bg-white text-[1.5rem] text-red-600 rounded-full border-4 border-gray-100"><i class="fa-solid fa-star"></i></span>
+                        <span class="flex justify-center items-center w-[20px] h-[20px] bg-white text-[0.8rem] text-gray-500 rounded-full border-2 border-gray-200"><i class="fa-solid fa-check"></i></span>
+                    </div>
+                </div>
+                <!-- CONTROLLER 9 -->
+                <div id="card-4" class="flex flex-col justify-center items-center w-[250px] h-auto p-3 gap-2 rounded-[1.2vh] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] relative hover:border-2 hover:border-gray-200">
+                    <div class="w-[220px] h-[200px]">
+                        <img src="public/assets/image/white-controller.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col w-full justify-start pt-2 text-[1.2rem]">
+                        <span class="font-bold">Solar Red Joystick</span>
+                        <span>Accessories</span>
+                    </div>
+                    <div class="flex w-full justify-between">
+                        <span class="flex text-[1.2rem] text-red-600 font-bold">$233<p class="flex translate-y-2 text-[0.9rem] text-black font-normal">/pcs</p></span>
+                        <span class="flex justify-center items-center w-[45px] h-[45px] -translate-y-4 bg-gray-500 text-white rounded-lg"><i class="fa-solid fa-cart-shopping text-[1.5rem]"></i></span>
+                    </div>
+                    <div id="icon" class="flex w-full justify-center items-center gap-3 absolute -bottom-[20px]">
+                        <span class="flex justify-center items-center w-[20px] h-[20px] bg-white text-[0.8rem] text-gray-500 rounded-full border-2 border-gray-200"><i class="fa-solid fa-xmark"></i></span>
+                        <span class="flex justify-center items-center w-[40px] h-[40px] bg-white text-[1.5rem] text-red-600 rounded-full border-4 border-gray-100"><i class="fa-solid fa-star"></i></span>
+                        <span class="flex justify-center items-center w-[20px] h-[20px] bg-white text-[0.8rem] text-gray-500 rounded-full border-2 border-gray-200"><i class="fa-solid fa-check"></i></span>
+                    </div>
+                </div>
+                <!-- CONTROLLER 10 -->
+                <div id="card-4" class="flex flex-col justify-center items-center w-[250px] h-auto p-3 gap-2 rounded-[1.2vh] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] relative hover:border-2 hover:border-gray-200">
+                    <div class="w-[220px] h-[200px]">
+                        <img src="public/assets/image/stik ps.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col w-full justify-start pt-2 text-[1.2rem]">
+                        <span class="font-bold">Solar Red Joystick</span>
+                        <span>Accessories</span>
+                    </div>
+                    <div class="flex w-full justify-between">
+                        <span class="flex text-[1.2rem] text-red-600 font-bold">$233<p class="flex translate-y-2 text-[0.9rem] text-black font-normal">/pcs</p></span>
+                        <span class="flex justify-center items-center w-[45px] h-[45px] -translate-y-4 bg-gray-500 text-white rounded-lg"><i class="fa-solid fa-cart-shopping text-[1.5rem]"></i></span>
+                    </div>
+                    <div id="icon" class="flex w-full justify-center items-center gap-3 absolute -bottom-[20px]">
+                        <span class="flex justify-center items-center w-[20px] h-[20px] bg-white text-[0.8rem] text-gray-500 rounded-full border-2 border-gray-200"><i class="fa-solid fa-xmark"></i></span>
+                        <span class="flex justify-center items-center w-[40px] h-[40px] bg-white text-[1.5rem] text-red-600 rounded-full border-4 border-gray-100"><i class="fa-solid fa-star"></i></span>
+                        <span class="flex justify-center items-center w-[20px] h-[20px] bg-white text-[0.8rem] text-gray-500 rounded-full border-2 border-gray-200"><i class="fa-solid fa-check"></i></span>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <section class="-translate-y-5 sm:translate-y-0 mb-[60px] sm:mb-none">
+            <div id="heading" class="flex justify-between pb-4">
+                <span class="text-[1.3rem] font-bold">Recomended</span>
+                <span class="text-[1.3rem] text-red-600">View all</span>
+            </div>
+            <div id="content" class="flex flex-col w-full items-start pt-2 gap-4 sm:flex-row">
+                <div id="label-1" class="flex w-full shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-3 rounded-[2vh] hover:border-2 hover:border-gray-200 sm:grow">
+                    <div class="w-[150px] mr-2">
+                        <img src="public/assets/image/console.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col w-full justify-start pt-2 text-[1.2rem] justify-start">
+                        <span class="font-bold">PS5 solar red</span>
+                        <span>packages</span>
+                    </div>
+                    <span class="flex text-[1.2rem] text-red-600 font-bold">$233<p class="flex text-[0.9rem] text-black font-normal">/pcs</p></span>
+                </div>
+                <div id="label-2" class="hidden w-full shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-3 rounded-[2vh] hover:border-2 hover:border-gray-200 sm:grow sm:flex">
+                    <div class="w-[150px] mr-2">
+                        <img src="public/assets/image/console.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col w-full justify-start pt-2 text-[1.2rem] justify-start">
+                        <span class="font-bold">PS5 solar red</span>
+                        <span>packages</span>
+                    </div>
+                    <span class="flex text-[1.2rem] text-red-600 font-bold">$233<p class="flex text-[0.9rem] text-black font-normal">/pcs</p></span>
+                </div>
+                <div id="label-3" class="hidden w-full shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-3 rounded-[2vh]hover:border-2 hover:border-gray-200 sm:growc sm:flex">
+                    <div class="w-[150px] mr-2">
+                        <img src="public/assets/image/console.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col w-full justify-start pt-2 text-[1.2rem] justify-start">
+                        <span class="font-bold">PS5 solar red</span>
+                        <span>packages</span>
+                    </div>
+                    <span class="flex text-[1.2rem] text-red-600 font-bold">$233<p class="flex text-[0.9rem] text-black font-normal">/pcs</p></span>
+                </div>
+            </div>
+        </section>
+        <footer class="fixed bottom-0 w-screen pr-[41px]">
+            <div id="icon-list" class="flex w-full justify-between sm:hidden text-[1.7rem] bg-white rounded-tl-[3vh] rounded-tr-[3vh] py-3 px-6 shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]">
+                <div class="flex items-center gap-3 bg-red-600 text-white rounded-[4vh] p-2">
+                    <i class="fa-solid fa-compass text-[1.5rem]"></i>
+                    <span class="text-[0.7rem]">MEET ME</span>
+                </div>
+                <div class="">
+                    <i class="fa-solid fa-gamepad text-gray-400"></i>
+                </div>
+                <div class="relative">
+                    <i class="fa-solid fa-comment text-gray-400"></i>
+                    <div class="flex justify-center items-center w-[10px] h-[10px] bg-red-600 text-white text-[0.5rem] border-2 border-white rounded-full p-[5px] absolute top-1 right-0 ">3</div>
+                </div>
+                <div class="">
+                    <i class="fa-solid fa-user text-gray-400"></i>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

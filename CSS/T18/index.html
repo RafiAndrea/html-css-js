@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <!-- JS -->
+    <script src="./src/js/app.js" defer></script>
+    <title>Disorganized</title>
+</head>
+
+<body>
+    <div id="root" class="flex flex-col h-full py-[20px] gap-[30px] bg-black text-white relative">
+        <header class="flex justify-between px-[20px] sm:hidden">
+            <div id="profile" class="flex gap-3">
+                <div class="w-[60px]">
+                    <img class="rounded-[3vh] border-2 border-white" src="public/assets/image/mek.jpg" alt="">
+                </div>
+                <div class="flex flex-col justify-center">
+                    <span class="font-bold text-[1.3rem]">Rafi Andrea</span>
+                    <span class="text-[1rem]">Welcome Back.</span>
+                </div>
+            </div>
+            <div id="icon" class="flex justify-center items-center w-[60px] h-[60px] bg-white text-black rounded-[3vh]">
+                <i class="fa-solid fa-magnifying-glass text-[2rem]"></i>
+            </div>
+        </header>
+        <nav id="navbar" class="hidden w-full text-white justify-between rounded-[1.2vh] gap-2 px-[20px] sm:flex">
+            <div id="left" class="flex items-center w-full sm:w-1/2">
+                <div id="logo" class="hidden flex justify-center bg-[#e1cf97] text-black items-center w-[60px] h-[60px] mr-[10px] rounded-[10px] p-2 sm:flex">
+                    <i class="fa-solid fa-mug-hot flex justify-center items-center w-[50px] h-[50px] text-[2.2rem]"></i>
+                </div>
+                <div id="search" class="flex justify-center items-center w-full text-[1.5rem]">
+                    <input type="text" placeholder="Coffee, Arabica Coffe, American Coffe, ..." class="flex w-full h-[60px] p-2 outline-none rounded-tl-[1.5vh] rounded-bl-[1.5vh] bg-gray-100">
+                    <i class="fa-solid fa-magnifying-glass flex justify-center items-center bg-gray-100 text-gray-400 h-[60px] w-[60px] rounded-br-[1.5vh] rounded-tr-[1.5vh]"></i>
+                </div>
+            </div>
+            <div id="right" class="flex justify-end items-center gap-[20px] sm:w-1/2">
+                <div id="action-list" class="hidden justify-center items-center gap-[20px] sm:flex">
+                    <button class="items-center gap-1 hover:bg-[#e1cf97] hover:text-black p-2 rounded-[1vh]">
+                        <span class="text-[1.7rem]">Brands</span>
+                        <i class="fa-solid fa-chevron-down text-[0.7rem]"></i>
+                    </button>
+                    <button class="items-center gap-1 hover:bg-[#e1cf97] hover:text-black p-2 rounded-[1vh]">
+                        <span class="text-[1.7rem]">Product</span>
+                        <i class="fa-solid fa-chevron-down text-[0.7rem]"></i>
+                    </button>
+                    <button class="items-center hover:bg-[#e1cf97] hover:text-black p-2 rounded-[1vh]">
+                        <span class="text-[1.7rem]">About Us</span>
+                    </button>
+                    <button class="items-center hover:bg-[#e1cf97] hover:text-black p-2 rounded-[1vh]">
+                        <span class="text-[1.7rem]">More</span>
+                    </button>
+                </div>
+                <div id="menu" class="flex justify-center items-center w-[50px] h-[50px] p-2 bg-[#e1cf97] rounded-[10px]">
+                    <i class="fa-solid fa-bars-progress flex justify-center items-center text-black w-[60px] h-[60px] text-[2rem]"></i>
+                </div>
+            </div>
+        </nav>
+        <section class="px-[20px]">
+            <div id="content" class="flex w-full text-black rounded-[3vh] p-[15px]" style="background-image: url(public/assets/image/124.jpg);">
+                <div id="left" class="flex flex-col w-[60%] p-4 gap-[50px]">
+                    <div class="flex flex-col justify-start leading-tight gap-3">
+                        <h1 class="text-[2rem] font-extrabold sm:text-[5rem]">START <span class="text-[#F9813B]">YOUR <br>DAY</span> WITH COFFEE</h1>
+                        <p class="sm:text-[1.5rem] pr-[40px] sm:font-bold sm:pr-[40%]">The best grain. the finest roast, the most powerfull flavor</p>
+                    </div>
+                    <button class="flex justify-center items-center w-[50%] p-[15px] bg-black text-white rounded-[3vh] sm:text-[1.7rem] sm:w-1/3">Order Now</button>
+                </div>
+                <div id="right" class="flex w-[40%] justify-center items-center px-[20px]">
+                    <div class="flex justify-center items-end border-[9px] sm:border-[14px] border-orange-600 rounded-full pt-[30px] h-[80%] sm:h-[100%] pb-[7px] relative object-fill" style="background-image: url(public/assets/image/bg2.jpg)">
+                        <img class="rounded-full w-[100%] sm:w-[300px] object-fill" src="public/assets/image/kopi-removebg-preview.png" alt="">
+                        <img class="absolute w-[60px] sm:w-[130px] bottom-[-15px] left-[-25px] sm:left-[-50px]" src="public/assets/image/30-off-removebg-preview.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <main class="flex flex-col w-full gap-[20px]">
+            <div id="category-content" class="flex pl-[20px] sm:text-[2rem] sm:pr-[20px] gap-3 grow overflow-hidden">
+                <span class="flex grow shrink-0 justify-center items-center py-2 px-7 border-2 border-white rounded-[2vh] hover:text-black hover:bg-[#e1cf97] hover:border-[#e1cf97]">Popular</span>
+                <span class="flex grow shrink-0 justify-center items-center py-2 px-7 border-2 border-white rounded-[2vh] hover:text-black hover:bg-[#e1cf97] hover:border-[#e1cf97]">Newest</span>
+                <span class="flex grow shrink-0 justify-center items-center py-2 px-7 border-2 border-white rounded-[2vh] hover:text-black hover:bg-[#e1cf97] hover:border-[#e1cf97]">Recommended</span>
+                <span class="flex grow shrink-0 justify-center items-center py-2 px-7 border-2 border-white grow rounded-[2vh] hover:text-black hover:bg-[#e1cf97] hover:border-[#e1cf97]">Most Chosen</span>
+                <span class="flex grow shrink-0 justify-center items-center py-2 px-7 border-2 border-white rounded-[2vh] hover:text-black hover:bg-[#e1cf97] hover:border-[#e1cf97]">Best Seller</span>
+            </div>
+            <div id="main-content" class="flex px-[20px] gap-4">
+                <div id="left" class="flex flex-col w-1/2 p-2 bg-[#2B2116] rounded-[2.4vh] gap-3">
+                    <div class="flex w-full justify-center items-center">
+                        <img class="rounded-[2vh]" src="public/assets/image/1.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col pb-3">
+                        <div class="flex flex-col text-[1.2rem] sm:text-[2rem]">
+                            <span>Indonesian Beans</span>
+                            <span class="text-[#A59B8F]">Coffee Beans</span>
+                        </div>
+                        <div class="flex justify-between items-center text-[1.2rem] sm:text-[2rem]">
+                            <span>$235.00</span>
+                            <span class="flex justify-center items-center w-[44px] h-[44px] sm:w-[54px] sm:h-[54px] bg-[#e1cf97] bg-[#e1cf97] text-black rounded-[2vh]">
+                                <i class="fa-solid fa-bag-shopping text-[1.5rem] sm:text-[2rem]"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div id="right" class="flex flex-col w-1/2 p-2 bg-[#2B2116] rounded-[2.4vh] gap-3">
+                    <div class="flex w-full justify-center items-center">
+                        <img class="rounded-[2vh]" src="public/assets/image/2.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col pb-3">
+                        <div class="flex flex-col text-[1.2rem] sm:text-[2rem]">
+                            <span>Indonesian Beans</span>
+                            <span class="text-[#A59B8F]">Coffee Beans</span>
+                        </div>
+                        <div class="flex justify-between items-center text-[1.2rem] sm:text-[2rem]">
+                            <span>$85.00</span>
+                            <span class="flex justify-center items-center w-[44px] h-[44px] sm:w-[54px] sm:h-[54px] bg-[#e1cf97] text-black rounded-[2vh]">
+                                <i class="fa-solid fa-bag-shopping text-[1.5rem] sm:text-[2rem]"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div id="sm-category" class="flex flex-col px-[20px] gap-4 sm:hidden">
+            <div id="recomended" class="flex flex-col w-full gap-3">
+                <div id="title" class="flex text-[1.3rem] justify-between ">
+                    <span class="font-bold">Recommended</span>
+                    <span class="text-[#A59B8F]">View all</span>
+                </div>
+                <div id="content" class="flex items-center gap-3">
+                    <div class="flex w-[180px]">
+                        <img class="rounded-[2vh]" src="public/assets/image/bg1.png" alt="">
+                    </div>
+                    <div class="flex flex-col text-[1.2rem] sm:text-[2rem]">
+                        <span>Indonesian Beans</span>
+                        <span class="text-[#A59B8F]">Coffee Beans</span>
+                        <span>$235.00</span>
+                        <span>Rating : 4.9 ⭐</span>
+                    </div> 
+                </div>
+            </div>
+            <div id="popular" class="flex flex-col w-full gap-3">
+                <div id="title" class="flex text-[1.3rem] justify-between ">
+                    <span class="font-bold">Popular</span>
+                    <span class="text-[#A59B8F]">View all</span>
+                </div>
+                <div id="content" class="flex items-center gap-3">
+                    <div class="flex w-[180px]">
+                        <img class="rounded-[2vh]" src="public/assets/image/recom img.jpeg" alt="">
+                    </div>
+                    <div class="flex flex-col text-[1.2rem] sm:text-[2rem]">
+                        <span>Indonesian Beans</span>
+                        <span class="text-[#A59B8F]">Coffee Beans</span>
+                        <span>$97.00</span>
+                        <span>Rating : 4.9 ⭐</span>
+                    </div> 
+                </div>
+            </div>
+            <div id="newest" class="flex flex-col w-full gap-3">
+                <div id="title" class="flex text-[1.3rem] justify-between ">
+                    <span class="font-bold">Newest</span>
+                    <span class="text-[#A59B8F]">View all</span>
+                </div>
+                <div id="content" class="flex items-center gap-3">
+                    <div class="flex w-[180px]">
+                        <img class="rounded-[2vh]" src="public/assets/image/2.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col text-[1.2rem] sm:text-[2rem]">
+                        <span>Indonesian Beans</span>
+                        <span class="text-[#A59B8F]">Coffee Beans</span>
+                        <span>$85.00</span>
+                        <span>Rating : 4.9 ⭐</span>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <nav class="flex justify-between items-center w-full bg-[#1a120f] text-[1.5rem] p-4 px-[30px] border-t-2 border-[#e1cf97] fixed bottom-0 sm:hidden">
+            <span class="flex flex-col justify-center items-center hover:text-[#e1cf97] gap-1">
+                <i class="fa-solid fa-house "></i>
+                <p class="text-[0.9rem]">Home</p>
+            </span>
+            <span class="flex flex-col justify-center items-center hover:text-[#e1cf97] gap-1">
+                <i class="fa-solid fa-heart"></i>
+                <p class="text-[0.9rem]">Favourite</p>
+            </span>
+            <span class="flex flex-col justify-center items-center hover:text-[#e1cf97] gap-1">
+                <i class="fa-solid fa-envelope"></i>
+                <p class="text-[0.9rem]">Inbox</p>
+            </span>
+            <span class="flex flex-col justify-center items-center hover:text-[#e1cf97] gap-1">
+                <i class="fa-solid fa-clipboard-list"></i>
+                <p class="text-[0.9rem]">Order</p>
+            </span>
+            <span class="flex flex-col justify-center items-center hover:text-[#e1cf97] gap-1">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <p class="text-[0.9rem]">Bag</p>
+            </span>
+        </nav>
+    </div>
+</body>
+
+</html7
